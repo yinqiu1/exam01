@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71823913-CF04-4C9D-BE18-60D728EB992D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>saiter tester</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SqlSugar\Lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Com\acboard.cs" />
+    <Compile Include="Com\ainuoangui.cs" />
+    <Compile Include="Com\bms.cs" />
+    <Compile Include="Com\jlmk.cs" />
+    <Compile Include="Com\osc.cs" />
+    <Compile Include="Com\toolFunc.cs" />
+    <Compile Include="Dao\SugarDao.cs" />
+    <Compile Include="DataBase\DbOps.cs" />
+    <Compile Include="DCFuncs\dcChargeModelUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeModelUCtrl.Designer.cs">
+      <DependentUpon>dcChargeModelUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcJieDianUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcJieDianUCtrl.Designer.cs">
+      <DependentUpon>dcJieDianUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcJueYuanUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcJueYuanUCtrl.Designer.cs">
+      <DependentUpon>dcJueYuanUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcDiYaFuZhuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcDiYaFuZhuUCtrl.Designer.cs">
+      <DependentUpon>dcDiYaFuZhuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeSettingUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeSettingUCtrl.Designer.cs">
+      <DependentUpon>dcChargeSettingUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeStageUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeStageUCtrl.Designer.cs">
+      <DependentUpon>dcChargeStageUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeEndUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeEndUCtrl.Designer.cs">
+      <DependentUpon>dcChargeEndUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcMainTopUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcMainTopUCtrl.Designer.cs">
+      <DependentUpon>dcMainTopUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcSoftStartUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcSoftStartUCtrl.Designer.cs">
+      <DependentUpon>dcSoftStartUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcConnectErrorUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcConnectErrorUCtrl.Designer.cs">
+      <DependentUpon>dcConnectErrorUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcWorkDiffUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcWorkDiffUCtrl.Designer.cs">
+      <DependentUpon>dcWorkDiffUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcViewDiffUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcViewDiffUCtrl.Designer.cs">
+      <DependentUpon>dcViewDiffUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcShiZhongUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcShiZhongUCtrl.Designer.cs">
+      <DependentUpon>dcShiZhongUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeErrorUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeErrorUCtrl.Designer.cs">
+      <DependentUpon>dcChargeErrorUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcXieYiUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcXieYiUCtrl.Designer.cs">
+      <DependentUpon>dcXieYiUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcDuanLuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcDuanLuUCtrl.Designer.cs">
+      <DependentUpon>dcDuanLuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcKaiMenUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcKaiMenUCtrl.Designer.cs">
+      <DependentUpon>dcKaiMenUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcSuoZhiUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcSuoZhiUCtrl.Designer.cs">
+      <DependentUpon>dcSuoZhiUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcJiTingUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcJiTingUCtrl.Designer.cs">
+      <DependentUpon>dcJiTingUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcXianLiuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcXianLiuUCtrl.Designer.cs">
+      <DependentUpon>dcXianLiuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcXianYaUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcXianYaUCtrl.Designer.cs">
+      <DependentUpon>dcXianYaUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcWenLiuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcWenLiuUCtrl.Designer.cs">
+      <DependentUpon>dcWenLiuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcShuChuAUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcShuChuAUCtrl.Designer.cs">
+      <DependentUpon>dcShuChuAUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcWenYaUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcWenYaUCtrl.Designer.cs">
+      <DependentUpon>dcWenYaUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcShuChuVUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcShuChuVUCtrl.Designer.cs">
+      <DependentUpon>dcShuChuVUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcDiYaUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcDiYaUCtrl.Designer.cs">
+      <DependentUpon>dcDiYaUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcJianKongComUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcJianKongComUCtrl.Designer.cs">
+      <DependentUpon>dcJianKongComUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChargeUCtrl.Designer.cs">
+      <DependentUpon>dcChargeUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcShuRuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcShuRuUCtrl.Designer.cs">
+      <DependentUpon>dcShuRuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcXianShiUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcXianShiUCtrl.Designer.cs">
+      <DependentUpon>dcXianShiUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcShengYuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcShengYuUCtrl.Designer.cs">
+      <DependentUpon>dcShengYuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcJieDiUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcJieDiUCtrl.Designer.cs">
+      <DependentUpon>dcJieDiUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcUsualCheckUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcUsualCheckUCtrl.Designer.cs">
+      <DependentUpon>dcUsualCheckUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\Ado.cs" />
+    <Compile Include="Demos\IDemos.cs" />
+    <Compile Include="Dialog\AboutBoxSaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\AboutBoxSaiter.Designer.cs">
+      <DependentUpon>AboutBoxSaiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ComDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ComDiag.Designer.cs">
+      <DependentUpon>ComDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\dcSortDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\dcSortDiag.Designer.cs">
+      <DependentUpon>dcSortDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ResultDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ResultDiag.Designer.cs">
+      <DependentUpon>ResultDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\SelectDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SelectDiag.Designer.cs">
+      <DependentUpon>SelectDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\SortDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SortDiag.Designer.cs">
+      <DependentUpon>SortDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileOp\opWord.cs" />
+    <Compile Include="Funcs\ChargeModelUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\ChargeModelUCtrl.Designer.cs">
+      <DependentUpon>ChargeModelUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\ChargeUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\ChargeUCtrl.Designer.cs">
+      <DependentUpon>ChargeUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\GuoLiuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\GuoLiuUCtrl.Designer.cs">
+      <DependentUpon>GuoLiuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\JianKongComUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\JianKongComUCtrl.Designer.cs">
+      <DependentUpon>JianKongComUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\JieDianUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\JieDianUCtrl.Designer.cs">
+      <DependentUpon>JieDianUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\JieDiUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\JieDiUCtrl.Designer.cs">
+      <DependentUpon>JieDiUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\JiLiangUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\JiLiangUCtrl.Designer.cs">
+      <DependentUpon>JiLiangUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\JiTingUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\JiTingUCtrl.Designer.cs">
+      <DependentUpon>JiTingUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\JueYuanUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\JueYuanUCtrl.Designer.cs">
+      <DependentUpon>JueYuanUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\KaiMenUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\KaiMenUCtrl.Designer.cs">
+      <DependentUpon>KaiMenUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\LianJieYiChangUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\LianJieYiChangUCtrl.Designer.cs">
+      <DependentUpon>LianJieYiChangUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\MainLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\MainLeft.Designer.cs">
+      <DependentUpon>MainLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\MainTopUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\MainTopUCtrl.Designer.cs">
+      <DependentUpon>MainTopUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\MainView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\MasterUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\MasterUCtrl.Designer.cs">
+      <DependentUpon>MasterUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\ShengYuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\ShengYuUCtrl.Designer.cs">
+      <DependentUpon>ShengYuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\ShiZhiWCUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\ShiZhiWCUCtrl.Designer.cs">
+      <DependentUpon>ShiZhiWCUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\ShiZhongWCUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\ShiZhongWCUCtrl.Designer.cs">
+      <DependentUpon>ShiZhongWCUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\ShuRuUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\ShuRuUCtrl.Designer.cs">
+      <DependentUpon>ShuRuUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\XianShiUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\XianShiUCtrl.Designer.cs">
+      <DependentUpon>XianShiUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Area.cs" />
+    <Compile Include="Models\InsertTest.cs" />
+    <Compile Include="Models\LanguageTest.cs" />
+    <Compile Include="Models\School.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Student2.cs" />
+    <Compile Include="Models\StudentGroup.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\TestUpdateColumns.cs" />
+    <Compile Include="Models\V_LanguageTest.cs" />
+    <Compile Include="Models\V_Student.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcs\UsualCheckUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcs\UsualCheckUCtrl.Designer.cs">
+      <DependentUpon>UsualCheckUCtrl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DCFuncs\dcChargeModelUCtrl.resx">
+      <DependentUpon>dcChargeModelUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcJieDianUCtrl.resx">
+      <DependentUpon>dcJieDianUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcJueYuanUCtrl.resx">
+      <DependentUpon>dcJueYuanUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcDiYaFuZhuUCtrl.resx">
+      <DependentUpon>dcDiYaFuZhuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChargeSettingUCtrl.resx">
+      <DependentUpon>dcChargeSettingUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChargeStageUCtrl.resx">
+      <DependentUpon>dcChargeStageUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChargeEndUCtrl.resx">
+      <DependentUpon>dcChargeEndUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcMainTopUCtrl.resx">
+      <DependentUpon>dcMainTopUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcSoftStartUCtrl.resx">
+      <DependentUpon>dcSoftStartUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcConnectErrorUCtrl.resx">
+      <DependentUpon>dcConnectErrorUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcWorkDiffUCtrl.resx">
+      <DependentUpon>dcWorkDiffUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcViewDiffUCtrl.resx">
+      <DependentUpon>dcViewDiffUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcShiZhongUCtrl.resx">
+      <DependentUpon>dcShiZhongUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChargeErrorUCtrl.resx">
+      <DependentUpon>dcChargeErrorUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcXieYiUCtrl.resx">
+      <DependentUpon>dcXieYiUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcDuanLuUCtrl.resx">
+      <DependentUpon>dcDuanLuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcKaiMenUCtrl.resx">
+      <DependentUpon>dcKaiMenUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcSuoZhiUCtrl.resx">
+      <DependentUpon>dcSuoZhiUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcJiTingUCtrl.resx">
+      <DependentUpon>dcJiTingUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcXianLiuUCtrl.resx">
+      <DependentUpon>dcXianLiuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcXianYaUCtrl.resx">
+      <DependentUpon>dcXianYaUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcWenLiuUCtrl.resx">
+      <DependentUpon>dcWenLiuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcShuChuAUCtrl.resx">
+      <DependentUpon>dcShuChuAUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcWenYaUCtrl.resx">
+      <DependentUpon>dcWenYaUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcShuChuVUCtrl.resx">
+      <DependentUpon>dcShuChuVUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcDiYaUCtrl.resx">
+      <DependentUpon>dcDiYaUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcJianKongComUCtrl.resx">
+      <DependentUpon>dcJianKongComUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChargeUCtrl.resx">
+      <DependentUpon>dcChargeUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcShuRuUCtrl.resx">
+      <DependentUpon>dcShuRuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcXianShiUCtrl.resx">
+      <DependentUpon>dcXianShiUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcShengYuUCtrl.resx">
+      <DependentUpon>dcShengYuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcJieDiUCtrl.resx">
+      <DependentUpon>dcJieDiUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcUsualCheckUCtrl.resx">
+      <DependentUpon>dcUsualCheckUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\AboutBoxSaiter.resx">
+      <DependentUpon>AboutBoxSaiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ComDiag.resx">
+      <DependentUpon>ComDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\dcSortDiag.resx">
+      <DependentUpon>dcSortDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ResultDiag.resx">
+      <DependentUpon>ResultDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SelectDiag.resx">
+      <DependentUpon>SelectDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SortDiag.resx">
+      <DependentUpon>SortDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\ChargeModelUCtrl.resx">
+      <DependentUpon>ChargeModelUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\ChargeUCtrl.resx">
+      <DependentUpon>ChargeUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\GuoLiuUCtrl.resx">
+      <DependentUpon>GuoLiuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\JianKongComUCtrl.resx">
+      <DependentUpon>JianKongComUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\JieDianUCtrl.resx">
+      <DependentUpon>JieDianUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\JieDiUCtrl.resx">
+      <DependentUpon>JieDiUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\JiLiangUCtrl.resx">
+      <DependentUpon>JiLiangUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\JiTingUCtrl.resx">
+      <DependentUpon>JiTingUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\JueYuanUCtrl.resx">
+      <DependentUpon>JueYuanUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\KaiMenUCtrl.resx">
+      <DependentUpon>KaiMenUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\LianJieYiChangUCtrl.resx">
+      <DependentUpon>LianJieYiChangUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\MainLeft.resx">
+      <DependentUpon>MainLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\MainTopUCtrl.resx">
+      <DependentUpon>MainTopUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\ShengYuUCtrl.resx">
+      <DependentUpon>ShengYuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\ShiZhiWCUCtrl.resx">
+      <DependentUpon>ShiZhiWCUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\ShiZhongWCUCtrl.resx">
+      <DependentUpon>ShiZhongWCUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\ShuRuUCtrl.resx">
+      <DependentUpon>ShuRuUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\XianShiUCtrl.resx">
+      <DependentUpon>XianShiUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcs\UsualCheckUCtrl.resx">
+      <DependentUpon>UsualCheckUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataBase\demo.sqlite" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SqlSugar\SqliteSugar.csproj">
+      <Project>{46a17e67-7e3e-4369-9b1f-43ba34bbdaef}</Project>
+      <Name>SqliteSugar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.jpg" />
+    <Content Include="logo.ico" />
+    <None Include="logo.jpg" />
+    <Content Include="x64\SQLite.Interop.dll" />
+    <Content Include="x86\SQLite.Interop.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
