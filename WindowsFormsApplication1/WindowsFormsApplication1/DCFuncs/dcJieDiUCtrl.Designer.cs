@@ -82,7 +82,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(205, 323);
+            this.textBox4.Location = new System.Drawing.Point(220, 323);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(73, 21);
@@ -91,7 +91,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(205, 249);
+            this.textBox3.Location = new System.Drawing.Point(220, 249);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(73, 21);
             this.textBox3.TabIndex = 151;
@@ -140,7 +140,7 @@
             this.richTextBox2.Location = new System.Drawing.Point(79, 249);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(120, 21);
+            this.richTextBox2.Size = new System.Drawing.Size(135, 21);
             this.richTextBox2.TabIndex = 145;
             this.richTextBox2.Text = "1、接地电阻(mΩ) ≤ ";
             // 

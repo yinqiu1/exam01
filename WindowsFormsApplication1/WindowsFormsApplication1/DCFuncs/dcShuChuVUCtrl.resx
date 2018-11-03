@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>步骤1：断开负载，启动桩和BMS，待输出电压达到整定值1后，手动接入50%额定负载，点击“测试”，测量出整定值1对应的数据，然后断开负载，点“下一步”。
+步骤2：待充电机输出电压达到整定值2后，手动接入50%额定负载，点击“测试”，测量出整定值2对应的数据，然后断开负载，点“下一步”。
+步骤3：待充电机输出电压达到整定值3后，手动接入50%额定负载，点击“测试”，测量出整定值3对应的数据，然后断开负载，点“下一步”，完成测试。</value>
+  </data>
 </root>

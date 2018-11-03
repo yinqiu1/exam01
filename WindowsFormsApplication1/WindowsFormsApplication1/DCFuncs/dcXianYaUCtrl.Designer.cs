@@ -85,6 +85,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "返回";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -95,6 +96,7 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "确认";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBox2
             // 
@@ -155,7 +157,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 19F);
-            this.label18.Location = new System.Drawing.Point(76, 24);
+            this.label18.Location = new System.Drawing.Point(158, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(168, 26);
             this.label18.TabIndex = 33;

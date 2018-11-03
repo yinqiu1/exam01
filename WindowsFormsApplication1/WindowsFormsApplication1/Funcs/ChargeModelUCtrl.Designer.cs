@@ -157,7 +157,7 @@
             this.usrRtbx.Name = "usrRtbx";
             this.usrRtbx.Size = new System.Drawing.Size(358, 79);
             this.usrRtbx.TabIndex = 35;
-            this.usrRtbx.Text = "";
+            this.usrRtbx.Text = "充电模式：模式4--（默认模式4，有模式1/2/3/4可供选择）\n连接方式：连接方式C--（默认连接方式C，有连接方式A/B/C三种可供选择）";
             // 
             // ChargeModelUCtrl
             // 

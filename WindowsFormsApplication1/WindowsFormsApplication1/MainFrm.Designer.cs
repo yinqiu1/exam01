@@ -37,6 +37,12 @@
             this.另存为ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.交流测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.直流测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.生成报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.交流充电桩测试报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.直流充电桩测试报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查看报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.交流充电桩测试报表ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.直流充电桩测试报表ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.安全巡检项目多项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.项目选择ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,12 +111,14 @@
             this.acserialPort = new System.IO.Ports.SerialPort(this.components);
             this.textBox_receive = new System.Windows.Forms.TextBox();
             this.clearbtn = new System.Windows.Forms.Button();
-            this.查看报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.生成报告ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.交流充电桩测试报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.直流充电桩测试报表ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.交流充电桩测试报表ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.直流充电桩测试报表ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.稳压精度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.输出电流误差ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.稳流精度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.限压特性ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.限流特性ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.急停功能试验ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.锁止功能试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开门保护试验ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -151,26 +159,26 @@
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.打开ToolStripMenuItem.Text = "打开";
             // 
             // 保存ToolStripMenuItem
             // 
             this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
-            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.保存ToolStripMenuItem.Text = "保存";
             // 
             // 另存为ToolStripMenuItem
             // 
             this.另存为ToolStripMenuItem.Name = "另存为ToolStripMenuItem";
-            this.另存为ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.另存为ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.另存为ToolStripMenuItem.Text = "另存为";
             // 
             // 交流测试ToolStripMenuItem
             // 
             this.交流测试ToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources._checked;
             this.交流测试ToolStripMenuItem.Name = "交流测试ToolStripMenuItem";
-            this.交流测试ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.交流测试ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.交流测试ToolStripMenuItem.Text = "交流测试";
             this.交流测试ToolStripMenuItem.Click += new System.EventHandler(this.交流测试ToolStripMenuItem_Click);
             // 
@@ -178,14 +186,58 @@
             // 
             this.直流测试ToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources._checked;
             this.直流测试ToolStripMenuItem.Name = "直流测试ToolStripMenuItem";
-            this.直流测试ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.直流测试ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.直流测试ToolStripMenuItem.Text = "直流测试";
             this.直流测试ToolStripMenuItem.Click += new System.EventHandler(this.直流测试ToolStripMenuItem_Click);
+            // 
+            // 生成报告ToolStripMenuItem
+            // 
+            this.生成报告ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.交流充电桩测试报表ToolStripMenuItem,
+            this.直流充电桩测试报表ToolStripMenuItem});
+            this.生成报告ToolStripMenuItem.Name = "生成报告ToolStripMenuItem";
+            this.生成报告ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.生成报告ToolStripMenuItem.Text = "生成报告";
+            // 
+            // 交流充电桩测试报表ToolStripMenuItem
+            // 
+            this.交流充电桩测试报表ToolStripMenuItem.Name = "交流充电桩测试报表ToolStripMenuItem";
+            this.交流充电桩测试报表ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.交流充电桩测试报表ToolStripMenuItem.Text = "交流充电桩测试报表";
+            this.交流充电桩测试报表ToolStripMenuItem.Click += new System.EventHandler(this.交流充电桩测试报表ToolStripMenuItem_Click);
+            // 
+            // 直流充电桩测试报表ToolStripMenuItem
+            // 
+            this.直流充电桩测试报表ToolStripMenuItem.Name = "直流充电桩测试报表ToolStripMenuItem";
+            this.直流充电桩测试报表ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.直流充电桩测试报表ToolStripMenuItem.Text = "直流充电桩测试报表";
+            // 
+            // 查看报告ToolStripMenuItem
+            // 
+            this.查看报告ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.交流充电桩测试报表ToolStripMenuItem1,
+            this.直流充电桩测试报表ToolStripMenuItem1});
+            this.查看报告ToolStripMenuItem.Name = "查看报告ToolStripMenuItem";
+            this.查看报告ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.查看报告ToolStripMenuItem.Text = "查看报告";
+            // 
+            // 交流充电桩测试报表ToolStripMenuItem1
+            // 
+            this.交流充电桩测试报表ToolStripMenuItem1.Name = "交流充电桩测试报表ToolStripMenuItem1";
+            this.交流充电桩测试报表ToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
+            this.交流充电桩测试报表ToolStripMenuItem1.Text = "交流充电桩测试报表";
+            this.交流充电桩测试报表ToolStripMenuItem1.Click += new System.EventHandler(this.交流充电桩测试报表ToolStripMenuItem1_Click);
+            // 
+            // 直流充电桩测试报表ToolStripMenuItem1
+            // 
+            this.直流充电桩测试报表ToolStripMenuItem1.Name = "直流充电桩测试报表ToolStripMenuItem1";
+            this.直流充电桩测试报表ToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
+            this.直流充电桩测试报表ToolStripMenuItem1.Text = "直流充电桩测试报表";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             // 
             // 安全巡检项目多项ToolStripMenuItem
@@ -386,7 +438,15 @@
             this.充电功能ToolStripMenuItem1,
             this.与监控管理系统通信功能ToolStripMenuItem,
             this.低压辅助电源试验ToolStripMenuItem,
-            this.输出电压误差ToolStripMenuItem});
+            this.输出电压误差ToolStripMenuItem,
+            this.稳压精度ToolStripMenuItem,
+            this.输出电流误差ToolStripMenuItem,
+            this.稳流精度ToolStripMenuItem,
+            this.限压特性ToolStripMenuItem,
+            this.限流特性ToolStripMenuItem,
+            this.急停功能试验ToolStripMenuItem1,
+            this.锁止功能试验ToolStripMenuItem,
+            this.开门保护试验ToolStripMenuItem1});
             this.直流安全巡检项目单项ToolStripMenuItem.Name = "直流安全巡检项目单项ToolStripMenuItem";
             this.直流安全巡检项目单项ToolStripMenuItem.Size = new System.Drawing.Size(148, 21);
             this.直流安全巡检项目单项ToolStripMenuItem.Text = "直流安全巡检项目(单项)";
@@ -706,49 +766,61 @@
             this.clearbtn.Visible = false;
             this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
-            // 查看报告ToolStripMenuItem
+            // 稳压精度ToolStripMenuItem
             // 
-            this.查看报告ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.交流充电桩测试报表ToolStripMenuItem1,
-            this.直流充电桩测试报表ToolStripMenuItem1});
-            this.查看报告ToolStripMenuItem.Name = "查看报告ToolStripMenuItem";
-            this.查看报告ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.查看报告ToolStripMenuItem.Text = "查看报告";
+            this.稳压精度ToolStripMenuItem.Name = "稳压精度ToolStripMenuItem";
+            this.稳压精度ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.稳压精度ToolStripMenuItem.Text = "稳压精度";
+            this.稳压精度ToolStripMenuItem.Click += new System.EventHandler(this.稳压精度ToolStripMenuItem_Click);
             // 
-            // 生成报告ToolStripMenuItem
+            // 输出电流误差ToolStripMenuItem
             // 
-            this.生成报告ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.交流充电桩测试报表ToolStripMenuItem,
-            this.直流充电桩测试报表ToolStripMenuItem});
-            this.生成报告ToolStripMenuItem.Name = "生成报告ToolStripMenuItem";
-            this.生成报告ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.生成报告ToolStripMenuItem.Text = "生成报告";
+            this.输出电流误差ToolStripMenuItem.Name = "输出电流误差ToolStripMenuItem";
+            this.输出电流误差ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.输出电流误差ToolStripMenuItem.Text = "输出电流误差";
+            this.输出电流误差ToolStripMenuItem.Click += new System.EventHandler(this.输出电流误差ToolStripMenuItem_Click);
             // 
-            // 交流充电桩测试报表ToolStripMenuItem
+            // 稳流精度ToolStripMenuItem
             // 
-            this.交流充电桩测试报表ToolStripMenuItem.Name = "交流充电桩测试报表ToolStripMenuItem";
-            this.交流充电桩测试报表ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.交流充电桩测试报表ToolStripMenuItem.Text = "交流充电桩测试报表";
-            this.交流充电桩测试报表ToolStripMenuItem.Click += new System.EventHandler(this.交流充电桩测试报表ToolStripMenuItem_Click);
+            this.稳流精度ToolStripMenuItem.Name = "稳流精度ToolStripMenuItem";
+            this.稳流精度ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.稳流精度ToolStripMenuItem.Text = "稳流精度";
+            this.稳流精度ToolStripMenuItem.Click += new System.EventHandler(this.稳流精度ToolStripMenuItem_Click);
             // 
-            // 直流充电桩测试报表ToolStripMenuItem
+            // 限压特性ToolStripMenuItem
             // 
-            this.直流充电桩测试报表ToolStripMenuItem.Name = "直流充电桩测试报表ToolStripMenuItem";
-            this.直流充电桩测试报表ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.直流充电桩测试报表ToolStripMenuItem.Text = "直流充电桩测试报表";
+            this.限压特性ToolStripMenuItem.Name = "限压特性ToolStripMenuItem";
+            this.限压特性ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.限压特性ToolStripMenuItem.Text = "限压特性";
+            this.限压特性ToolStripMenuItem.Click += new System.EventHandler(this.限压特性ToolStripMenuItem_Click);
             // 
-            // 交流充电桩测试报表ToolStripMenuItem1
+            // 限流特性ToolStripMenuItem
             // 
-            this.交流充电桩测试报表ToolStripMenuItem1.Name = "交流充电桩测试报表ToolStripMenuItem1";
-            this.交流充电桩测试报表ToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.交流充电桩测试报表ToolStripMenuItem1.Text = "交流充电桩测试报表";
-            this.交流充电桩测试报表ToolStripMenuItem1.Click += new System.EventHandler(this.交流充电桩测试报表ToolStripMenuItem1_Click);
+            this.限流特性ToolStripMenuItem.Name = "限流特性ToolStripMenuItem";
+            this.限流特性ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.限流特性ToolStripMenuItem.Text = "限流特性";
+            this.限流特性ToolStripMenuItem.Click += new System.EventHandler(this.限流特性ToolStripMenuItem_Click);
             // 
-            // 直流充电桩测试报表ToolStripMenuItem1
+            // 急停功能试验ToolStripMenuItem1
             // 
-            this.直流充电桩测试报表ToolStripMenuItem1.Name = "直流充电桩测试报表ToolStripMenuItem1";
-            this.直流充电桩测试报表ToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.直流充电桩测试报表ToolStripMenuItem1.Text = "直流充电桩测试报表";
+            this.急停功能试验ToolStripMenuItem1.Name = "急停功能试验ToolStripMenuItem1";
+            this.急停功能试验ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.急停功能试验ToolStripMenuItem1.Text = "急停功能试验";
+            this.急停功能试验ToolStripMenuItem1.Click += new System.EventHandler(this.急停功能试验ToolStripMenuItem1_Click);
+            // 
+            // 锁止功能试验ToolStripMenuItem
+            // 
+            this.锁止功能试验ToolStripMenuItem.Name = "锁止功能试验ToolStripMenuItem";
+            this.锁止功能试验ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.锁止功能试验ToolStripMenuItem.Text = "锁止功能试验";
+            this.锁止功能试验ToolStripMenuItem.Click += new System.EventHandler(this.锁止功能试验ToolStripMenuItem_Click);
+            // 
+            // 开门保护试验ToolStripMenuItem1
+            // 
+            this.开门保护试验ToolStripMenuItem1.Name = "开门保护试验ToolStripMenuItem1";
+            this.开门保护试验ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.开门保护试验ToolStripMenuItem1.Text = "开门保护试验";
+            this.开门保护试验ToolStripMenuItem1.Click += new System.EventHandler(this.开门保护试验ToolStripMenuItem1_Click);
             // 
             // MainFrm
             // 
@@ -866,5 +938,13 @@
         private System.Windows.Forms.ToolStripMenuItem 查看报告ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 交流充电桩测试报表ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 直流充电桩测试报表ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 稳压精度ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 输出电流误差ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 稳流精度ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 限压特性ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 限流特性ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 急停功能试验ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 锁止功能试验ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 开门保护试验ToolStripMenuItem1;
     }
 }

@@ -123,6 +123,19 @@ namespace WindowsFormsApplication1.Funcs
                     return;
                 }
                 //测试指令
+                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jdtest05.Trim()));
+                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jdtestrev05.Trim())))
+                {
+                    MessageBox.Show("设备测试指令异常5");
+                    return;
+                }
+                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jdtest06.Trim()));
+                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jdtestrev06.Trim())))
+                {
+                    MessageBox.Show("设备测试指令异常6");
+                    return;
+                }
+
                 recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jdtest01.Trim()));
                 if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jdtestrev01.Trim())))
                 {
@@ -149,18 +162,7 @@ namespace WindowsFormsApplication1.Funcs
                 int n = toolFunc.slice4BytesArray(recData, 10, 4);
                 textBox3.Text = n.ToString();
 
-                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jdtest05.Trim()));
-                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jdtestrev05.Trim())))
-                {
-                    MessageBox.Show("设备测试指令异常5");
-                    return;
-                }
-                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jdtest06.Trim()));
-                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jdtestrev06.Trim())))
-                {
-                    MessageBox.Show("设备测试指令异常6");
-                    return;
-                }                
+                
             }
             else if (MsgBoxRel == DialogResult.Cancel)
             {

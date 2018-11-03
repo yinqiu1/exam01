@@ -64,7 +64,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(73, 21);
             this.textBox4.TabIndex = 131;
-            this.textBox4.Text = "2";
+            this.textBox4.Text = "0";
             // 
             // textBox3
             // 
@@ -72,7 +72,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(73, 21);
             this.textBox3.TabIndex = 130;
-            this.textBox3.Text = "2";
+            this.textBox3.Text = "0";
             // 
             // textBox1
             // 
@@ -116,9 +116,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(70, 331);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 12);
+            this.label3.Size = new System.Drawing.Size(83, 12);
             this.label3.TabIndex = 114;
-            this.label3.Text = "输出L对地泄漏电流(uA)";
+            this.label3.Text = "输出电压(V): ";
             // 
             // resuallbl
             // 
@@ -134,9 +134,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(70, 356);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 12);
+            this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 116;
-            this.label2.Text = "输出N对地泄漏电流(uA)";
+            this.label2.Text = "输出电流(A):";
             // 
             // label1
             // 
@@ -154,7 +154,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 12);
             this.label21.TabIndex = 118;
-            this.label21.Text = "④ 结果判断";
+            this.label21.Text = "④ 测试结果";
             // 
             // label20
             // 

@@ -13,3 +13,11 @@ D:\workspaces\VisualStudio\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Da
 D:\workspaces\VisualStudio\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.dll
 D:\workspaces\VisualStudio\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.pdb
 D:\workspaces\VisualStudio\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.csprojResolveAssemblyReference.cache
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.csprojResolveAssemblyReference.cache
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.pdb
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\SqliteSugar.XML
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\SqliteSugar.dll
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\SqliteSugar.pdb
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Data.SQLite.dll
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Data.SQLite.xml
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.dll

@@ -130,6 +130,19 @@ namespace WindowsFormsApplication1.Funcs
                     return;
                 }
                 //测试指令
+                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest05.Trim()));
+                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev05.Trim())))
+                {
+                    MessageBox.Show("设备测试指令异常5");
+                    return;
+                }
+                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest06.Trim()));
+                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev06.Trim())))
+                {
+                    MessageBox.Show("设备测试指令异常6");
+                    return;
+                }
+
                 recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest01.Trim()));
                 if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev01.Trim())))
                 {
@@ -156,18 +169,7 @@ namespace WindowsFormsApplication1.Funcs
                 int n = toolFunc.slice4BytesArray(recData, 10, 4);
                 textBox3.Text = n.ToString();
 
-                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest05.Trim()));
-                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev05.Trim())))
-                {
-                    MessageBox.Show("设备测试指令异常5");
-                    return;
-                }
-                recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest06.Trim()));
-                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev06.Trim())))
-                {
-                    MessageBox.Show("设备测试指令异常6");
-                    return;
-                }
+                
                 //测试完成之后将结果写入数据库
 
                 if (l > 10 || n > 10)

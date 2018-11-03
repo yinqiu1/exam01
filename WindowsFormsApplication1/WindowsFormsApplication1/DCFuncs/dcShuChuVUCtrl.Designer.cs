@@ -28,35 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dcShuChuVUCtrl));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +67,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 15F);
-            this.button2.Location = new System.Drawing.Point(244, 432);
+            this.button2.Location = new System.Drawing.Point(242, 432);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 36;
@@ -75,7 +78,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 15F);
-            this.button1.Location = new System.Drawing.Point(81, 432);
+            this.button1.Location = new System.Drawing.Point(78, 432);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 44);
             this.button1.TabIndex = 37;
@@ -85,18 +88,17 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(22, 328);
+            this.richTextBox1.Location = new System.Drawing.Point(13, 316);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(445, 87);
+            this.richTextBox1.Size = new System.Drawing.Size(472, 110);
             this.richTextBox1.TabIndex = 35;
-            this.richTextBox1.Text = "1、断开负载，启动充电机，等待充电机输出电压达到整定值1；\n2、手动接入50%额定负载，点击“测试按钮”，测量出整定值1对应的数据；\n3、断开负载，然后点击“下一" +
-    "步”，等待充电机输出电压达到整定值2；\n4、重复第2、3步，直至测试完成。\n";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(20, 304);
+            this.label21.Location = new System.Drawing.Point(20, 295);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 12);
             this.label21.TabIndex = 30;
@@ -116,9 +118,11 @@
             // 
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textBox12);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(13, 31);
             this.groupBox1.Name = "groupBox1";
@@ -126,6 +130,57 @@
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "① 参数设置";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(148, 42);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(73, 21);
+            this.textBox3.TabIndex = 73;
+            this.textBox3.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 12);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "输出电压整定值1(V)：";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(358, 18);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(73, 21);
+            this.textBox2.TabIndex = 73;
+            this.textBox2.Text = "0";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(148, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(73, 21);
+            this.textBox1.TabIndex = 73;
+            this.textBox1.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(227, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 12);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "输出电压整定值2(V)：";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 12);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "输出电压整定值3(V)：";
             // 
             // groupBox2
             // 
@@ -152,33 +207,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "② 测试数据";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 12);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "输出电压整定值1(V)：";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(227, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 12);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "输出电压整定值2(V)：";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 12);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "输出电压整定值3(V)：";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -187,15 +215,6 @@
             this.label4.Size = new System.Drawing.Size(125, 12);
             this.label4.TabIndex = 30;
             this.label4.Text = "输出电压测量值1(V)：";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 12);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "输出电流测量值4(A)：";
             // 
             // label6
             // 
@@ -206,15 +225,6 @@
             this.label6.TabIndex = 30;
             this.label6.Text = "输出电压测量值2(V)：";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(272, 69);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 12);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "误差2(%)：";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -223,6 +233,70 @@
             this.label8.Size = new System.Drawing.Size(125, 12);
             this.label8.TabIndex = 30;
             this.label8.Text = "输出电压测量值3(V)：";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(148, 134);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(73, 21);
+            this.textBox7.TabIndex = 73;
+            this.textBox7.Text = "0";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(148, 100);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(73, 21);
+            this.textBox6.TabIndex = 73;
+            this.textBox6.Text = "0";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(148, 66);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(73, 21);
+            this.textBox5.TabIndex = 73;
+            this.textBox5.Text = "0";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(358, 134);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(73, 21);
+            this.textBox11.TabIndex = 73;
+            this.textBox11.Text = "合格";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(358, 100);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(73, 21);
+            this.textBox10.TabIndex = 73;
+            this.textBox10.Text = "0";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(358, 66);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(73, 21);
+            this.textBox9.TabIndex = 73;
+            this.textBox9.Text = "0";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(358, 32);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(73, 21);
+            this.textBox8.TabIndex = 73;
+            this.textBox8.Text = "0";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(148, 32);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(73, 21);
+            this.textBox4.TabIndex = 73;
+            this.textBox4.Text = "0";
             // 
             // label9
             // 
@@ -251,93 +325,40 @@
             this.label11.TabIndex = 30;
             this.label11.Text = "误差1(%)：";
             // 
-            // textBox1
+            // label5
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 21);
-            this.textBox1.TabIndex = 73;
-            this.textBox1.Text = "0";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 12);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "输出电流测量值4(A)：";
             // 
-            // textBox2
+            // label7
             // 
-            this.textBox2.Location = new System.Drawing.Point(358, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(73, 21);
-            this.textBox2.TabIndex = 73;
-            this.textBox2.Text = "0";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(272, 69);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 12);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "误差2(%)：";
             // 
-            // textBox3
+            // label12
             // 
-            this.textBox3.Location = new System.Drawing.Point(148, 42);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 21);
-            this.textBox3.TabIndex = 73;
-            this.textBox3.Text = "0";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(227, 45);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(119, 12);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "判断准则(%)：    ±";
             // 
-            // textBox4
+            // textBox12
             // 
-            this.textBox4.Location = new System.Drawing.Point(148, 32);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(73, 21);
-            this.textBox4.TabIndex = 73;
-            this.textBox4.Text = "0";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(148, 66);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(73, 21);
-            this.textBox5.TabIndex = 73;
-            this.textBox5.Text = "0";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(148, 100);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(73, 21);
-            this.textBox6.TabIndex = 73;
-            this.textBox6.Text = "0";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(148, 134);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(73, 21);
-            this.textBox7.TabIndex = 73;
-            this.textBox7.Text = "0";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(358, 32);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(73, 21);
-            this.textBox8.TabIndex = 73;
-            this.textBox8.Text = "0";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(358, 66);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(73, 21);
-            this.textBox9.TabIndex = 73;
-            this.textBox9.Text = "0";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(358, 100);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(73, 21);
-            this.textBox10.TabIndex = 73;
-            this.textBox10.Text = "0";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(358, 134);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(73, 21);
-            this.textBox11.TabIndex = 73;
-            this.textBox11.Text = "0";
+            this.textBox12.Location = new System.Drawing.Point(358, 42);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(73, 21);
+            this.textBox12.TabIndex = 73;
+            this.textBox12.Text = "0";
             // 
             // dcShuChuVUCtrl
             // 
@@ -392,5 +413,7 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label12;
     }
 }

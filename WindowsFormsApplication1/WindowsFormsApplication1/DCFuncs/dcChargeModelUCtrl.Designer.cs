@@ -39,6 +39,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.Fail = new System.Windows.Forms.RadioButton();
             this.Pass = new System.Windows.Forms.RadioButton();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button2
@@ -85,7 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 278);
+            this.label1.Location = new System.Drawing.Point(70, 264);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 12);
             this.label1.TabIndex = 29;
@@ -150,6 +151,15 @@
             this.Pass.Text = "Pass";
             this.Pass.UseVisualStyleBackColor = true;
             // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(72, 293);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(358, 67);
+            this.richTextBox3.TabIndex = 34;
+            this.richTextBox3.Text = "充电模式：模式4--（默认模式4，有模式1/2/3/4可供选择）\n连接方式：连接方式C--（默认连接方式C，有连接方式A/B/C三种可供选择）";
+            // 
             // dcChargeModelUCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -158,6 +168,7 @@
             this.Controls.Add(this.Pass);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
@@ -185,5 +196,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.RadioButton Fail;
         private System.Windows.Forms.RadioButton Pass;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }

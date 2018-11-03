@@ -96,7 +96,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 12);
             this.label21.TabIndex = 137;
-            this.label21.Text = "④ 结果判断";
+            this.label21.Text = "④ 测试结果";
             // 
             // label20
             // 

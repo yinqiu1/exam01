@@ -416,7 +416,69 @@ namespace WindowsFormsApplication1
             panel2.Controls.Clear();
             panel2.Controls.Add(uc);
         }
+        private void 稳压精度ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcWenYaUCtrl uc = new DCFuncs.dcWenYaUCtrl();
+            uc.DataChange += new DCFuncs.dcWenYaUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
 
+        private void 输出电流误差ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcShuChuAUCtrl uc = new DCFuncs.dcShuChuAUCtrl();
+            uc.DataChange += new DCFuncs.dcShuChuAUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 稳流精度ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcWenLiuUCtrl uc = new DCFuncs.dcWenLiuUCtrl();
+            uc.DataChange += new DCFuncs.dcWenLiuUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 限压特性ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcXianYaUCtrl uc = new DCFuncs.dcXianYaUCtrl();
+            uc.DataChange += new DCFuncs.dcXianYaUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 限流特性ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcXianLiuUCtrl uc = new DCFuncs.dcXianLiuUCtrl();
+            uc.DataChange += new DCFuncs.dcXianLiuUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 急停功能试验ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcJiTingUCtrl uc = new DCFuncs.dcJiTingUCtrl();
+            uc.DataChange += new DCFuncs.dcJiTingUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 锁止功能试验ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcSuoZhiUCtrl uc = new DCFuncs.dcSuoZhiUCtrl();
+            uc.DataChange += new DCFuncs.dcSuoZhiUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 开门保护试验ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcKaiMenUCtrl uc = new DCFuncs.dcKaiMenUCtrl();
+            uc.DataChange += new DCFuncs.dcKaiMenUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
 
         #endregion
 
@@ -885,7 +947,7 @@ namespace WindowsFormsApplication1
                 Com.acboard.Cxvolt = "0";
                 Com.acboard.Cxcu = "0";
                 Com.acboard.inpower = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 5, 2)) / 10).ToString("0.0");
-                Com.acboard.chargeSingle = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 7, 2)) / 10).ToString("0.0");
+                Com.acboard.chargeSingle = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 7, 2)) / 100).ToString("0.0");
                 //发送返回指令
                 Thread.Sleep(5);
                 byte[] array = toolFunc.HexStringToByteArray(Com.acboard.pcA1C3Send.Trim());
@@ -913,7 +975,7 @@ namespace WindowsFormsApplication1
             {
                 //MessageBox.Show("acB23C");
                 Com.acboard.inpower = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 5, 2)) / 100).ToString("0.00");
-                Com.acboard.chargeSingle = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 7, 4)) / 10).ToString("0.0");                
+                Com.acboard.chargeSingle = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 7, 4)) / 100).ToString("0.0");                
                 //发送返回指令
                 Thread.Sleep(5);
                 byte[] array = toolFunc.HexStringToByteArray(Com.acboard.pcB2C3Send.Trim());
@@ -1188,24 +1250,7 @@ namespace WindowsFormsApplication1
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
     }
