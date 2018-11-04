@@ -61,8 +61,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -339,7 +339,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 19F);
-            this.label18.Location = new System.Drawing.Point(110, 10);
+            this.label18.Location = new System.Drawing.Point(100, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(298, 26);
             this.label18.TabIndex = 152;
@@ -368,6 +368,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "示值误差、付费误差";
             // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(149, 334);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(73, 21);
+            this.textBox15.TabIndex = 167;
+            this.textBox15.Text = "0";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -376,14 +384,6 @@
             this.label10.Size = new System.Drawing.Size(71, 12);
             this.label10.TabIndex = 142;
             this.label10.Text = "充电时间(s)";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(149, 334);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(73, 21);
-            this.textBox15.TabIndex = 167;
-            this.textBox15.Text = "0";
             // 
             // ShiZhiWCUCtrl
             // 

@@ -189,5 +189,15 @@ namespace DataBase
             }
             return num;
         }
+        //协议一致性试验
+        public DataTable XYgetItemView()
+        {
+            DataTable dt = null;
+            using (var db = SugarDao.GetInstance())
+            {
+                dt = db.GetDataTable("select * from protocol order by id asc");
+            }
+            return dt;
+        }
     }
 }

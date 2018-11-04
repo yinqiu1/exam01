@@ -80,6 +80,24 @@
     <Compile Include="DCFuncs\dcChargeModelUCtrl.Designer.cs">
       <DependentUpon>dcChargeModelUCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DCFuncs\dcChDKZSXUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChDKZSXUCtrl.Designer.cs">
+      <DependentUpon>dcChDKZSXUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcChDKZXHUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcChDKZXHUCtrl.Designer.cs">
+      <DependentUpon>dcChDKZXHUCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DCFuncs\dcDianChiFanUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcDianChiFanUCtrl.Designer.cs">
+      <DependentUpon>dcDianChiFanUCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DCFuncs\dcJieDianUCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -272,6 +290,12 @@
     <Compile Include="DCFuncs\dcUsualCheckUCtrl.Designer.cs">
       <DependentUpon>dcUsualCheckUCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DCFuncs\dcZhiLiuXTUCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCFuncs\dcZhiLiuXTUCtrl.Designer.cs">
+      <DependentUpon>dcZhiLiuXTUCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Demos\Ado.cs" />
     <Compile Include="Demos\IDemos.cs" />
     <Compile Include="Dialog\AboutBoxSaiter.cs">
@@ -377,12 +401,6 @@
     <Compile Include="Funcs\LianJieYiChangUCtrl.Designer.cs">
       <DependentUpon>LianJieYiChangUCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Funcs\MainLeft.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Funcs\MainLeft.Designer.cs">
-      <DependentUpon>MainLeft.cs</DependentUpon>
-    </Compile>
     <Compile Include="Funcs\MainTopUCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -394,12 +412,6 @@
     </Compile>
     <Compile Include="Funcs\MainView.Designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Funcs\MasterUCtrl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Funcs\MasterUCtrl.Designer.cs">
-      <DependentUpon>MasterUCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Funcs\ShengYuUCtrl.cs">
       <SubType>UserControl</SubType>
@@ -465,6 +477,15 @@
     </Compile>
     <EmbeddedResource Include="DCFuncs\dcChargeModelUCtrl.resx">
       <DependentUpon>dcChargeModelUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChDKZSXUCtrl.resx">
+      <DependentUpon>dcChDKZSXUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcChDKZXHUCtrl.resx">
+      <DependentUpon>dcChDKZXHUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcDianChiFanUCtrl.resx">
+      <DependentUpon>dcDianChiFanUCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DCFuncs\dcJieDianUCtrl.resx">
       <DependentUpon>dcJieDianUCtrl.cs</DependentUpon>
@@ -562,6 +583,9 @@
     <EmbeddedResource Include="DCFuncs\dcUsualCheckUCtrl.resx">
       <DependentUpon>dcUsualCheckUCtrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DCFuncs\dcZhiLiuXTUCtrl.resx">
+      <DependentUpon>dcZhiLiuXTUCtrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialog\AboutBoxSaiter.resx">
       <DependentUpon>AboutBoxSaiter.cs</DependentUpon>
     </EmbeddedResource>
@@ -612,9 +636,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Funcs\LianJieYiChangUCtrl.resx">
       <DependentUpon>LianJieYiChangUCtrl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Funcs\MainLeft.resx">
-      <DependentUpon>MainLeft.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Funcs\MainTopUCtrl.resx">
       <DependentUpon>MainTopUCtrl.cs</DependentUpon>

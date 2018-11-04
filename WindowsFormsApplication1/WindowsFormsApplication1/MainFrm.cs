@@ -108,7 +108,7 @@ namespace WindowsFormsApplication1
             //加载datagridview
             dcUpdateDataGrid();
 
-            UpdateMainViewRight();
+            dcUpdateMainViewRight();
         }
 
         private void 交流测试ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -479,7 +479,125 @@ namespace WindowsFormsApplication1
             panel2.Controls.Clear();
             panel2.Controls.Add(uc);
         }
+        private void 输出短路保护试验ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcDuanLuUCtrl uc = new DCFuncs.dcDuanLuUCtrl();
+            uc.DataChange += new DCFuncs.dcDuanLuUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
 
+        private void 协议一致性试验ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcXieYiUCtrl uc = new DCFuncs.dcXieYiUCtrl();
+            uc.DataChange += new DCFuncs.dcXieYiUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 充电异常状态试验ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcChargeErrorUCtrl uc = new DCFuncs.dcChargeErrorUCtrl();
+            uc.DataChange += new DCFuncs.dcChargeErrorUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 低压辅助上电及充电握手阶段检查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcDiYaFuZhuUCtrl uc = new DCFuncs.dcDiYaFuZhuUCtrl();
+            uc.DataChange += new DCFuncs.dcDiYaFuZhuUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 充电参数配置阶段检查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcChargeSettingUCtrl uc = new DCFuncs.dcChargeSettingUCtrl();
+            uc.DataChange += new DCFuncs.dcChargeSettingUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 充电阶段检查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcChargeStageUCtrl uc = new DCFuncs.dcChargeStageUCtrl();
+            uc.DataChange += new DCFuncs.dcChargeStageUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 充电结束阶段检查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcChargeEndUCtrl uc = new DCFuncs.dcChargeEndUCtrl();
+            uc.DataChange += new DCFuncs.dcChargeEndUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 软启动ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcSoftStartUCtrl uc = new DCFuncs.dcSoftStartUCtrl();
+            uc.DataChange += new DCFuncs.dcSoftStartUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 连接异常试验ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcConnectErrorUCtrl uc = new DCFuncs.dcConnectErrorUCtrl();
+            uc.DataChange += new DCFuncs.dcConnectErrorUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 工作误差测试ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcWorkDiffUCtrl uc = new DCFuncs.dcWorkDiffUCtrl();
+            uc.DataChange += new DCFuncs.dcWorkDiffUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 示值误差付费误差测试ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcViewDiffUCtrl uc = new DCFuncs.dcViewDiffUCtrl();
+            uc.DataChange += new DCFuncs.dcViewDiffUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 时钟示值误差测定ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcShiZhongUCtrl uc = new DCFuncs.dcShiZhongUCtrl();
+            uc.DataChange += new DCFuncs.dcShiZhongUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 电池反接试验ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcDianChiFanUCtrl uc = new DCFuncs.dcDianChiFanUCtrl();
+            uc.DataChange += new DCFuncs.dcDianChiFanUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 充电控制信号检查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcChDKZXHUCtrl uc = new DCFuncs.dcChDKZXHUCtrl();
+            uc.DataChange += new DCFuncs.dcChDKZXHUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
+
+        private void 充电控制时序检查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DCFuncs.dcChDKZSXUCtrl uc = new DCFuncs.dcChDKZSXUCtrl();
+            uc.DataChange += new DCFuncs.dcChDKZSXUCtrl.DataChangeHandler(DCBack2MainView);
+            panel2.Controls.Clear();
+            panel2.Controls.Add(uc);
+        }
         #endregion
 
 
@@ -1121,6 +1239,13 @@ namespace WindowsFormsApplication1
             panel2.Controls.Clear();
             panel2.Controls.Add((UserControl)obj);
         }
+        public void dcUpdateMainViewRight()
+        {
+            Type type = Type.GetType("WindowsFormsApplication1.DCFuncs.dcZhiLiuXTUCtrl");
+            object obj = Activator.CreateInstance(type);
+            panel2.Controls.Clear();
+            panel2.Controls.Add((UserControl)obj);
+        }
         public void DataChanged(object sender, EventArgs args)
         {
             // 更新窗体控件            
@@ -1139,7 +1264,7 @@ namespace WindowsFormsApplication1
         }
         public void DCBack2MainView(object sender, EventArgs args)
         {
-            UpdateMainViewRight();
+            dcUpdateMainViewRight();
 
             dcUpdateDataGrid();
         }
@@ -1249,6 +1374,10 @@ namespace WindowsFormsApplication1
             }
 
         }
+
+        
+
+
 
         
 

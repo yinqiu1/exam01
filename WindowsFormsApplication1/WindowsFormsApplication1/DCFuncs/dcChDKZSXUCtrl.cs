@@ -6,17 +6,23 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO.Ports;
+using DataBase;
+using System.Threading;
+using WindowsFormsApplication1.Com;
 
-namespace WindowsFormsApplication1.Funcs
+namespace WindowsFormsApplication1.DCFuncs
 {
-    public partial class MasterUCtrl : UserControl
+    public partial class dcChDKZSXUCtrl : UserControl
     {
-        public MasterUCtrl()
+        public dcChDKZSXUCtrl()
         {
             InitializeComponent();
         }
-        // 定义委托
-        // public delegate void DataChangeHandler(string x); 一次可以传递一个string
+        #region 变量定义、委托定义
+        private SerialPort com;
+        DbOps op = new DbOps();
+        // 定义委托        
         public delegate void DataChangeHandler(object sender, DataChangeEventArgs args);
         // 声明事件
         public event DataChangeHandler DataChange;
@@ -40,6 +46,18 @@ namespace WindowsFormsApplication1.Funcs
                 name = s1;
                 pass = s2;
             }
+        }
+        #endregion
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // 触发事件， 传递自定义参数
+            OnDataChange(this, new DataChangeEventArgs("", ""));
+            this.Dispose();	   
         }
     }
 }

@@ -125,7 +125,6 @@ D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplicati
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.JueYuanUCtrl.resources
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.KaiMenUCtrl.resources
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.LianJieYiChangUCtrl.resources
-D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.MainLeft.resources
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.MainTopUCtrl.resources
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.MainView.resources
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Funcs.ShengYuUCtrl.resources
@@ -146,3 +145,7 @@ D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplicati
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\SqliteSugar.xml
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\System.Data.SQLite.xml
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\saiter tester.exe
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DCFuncs.dcDianChiFanUCtrl.resources
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DCFuncs.dcChDKZXHUCtrl.resources
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DCFuncs.dcChDKZSXUCtrl.resources
+D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DCFuncs.dcZhiLiuXTUCtrl.resources

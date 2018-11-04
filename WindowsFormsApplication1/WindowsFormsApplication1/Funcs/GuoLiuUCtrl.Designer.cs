@@ -142,7 +142,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 19F);
-            this.label18.Location = new System.Drawing.Point(135, 11);
+            this.label18.Location = new System.Drawing.Point(142, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(220, 26);
             this.label18.TabIndex = 85;

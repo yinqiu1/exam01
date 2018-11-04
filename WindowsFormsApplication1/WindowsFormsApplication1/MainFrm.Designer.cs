@@ -68,7 +68,6 @@
             this.示值误差付费误差测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.时钟示值误差测定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.直流安全巡检项目单项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.一般检查ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.充电模式和连接方式检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.绝缘电阻试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.介电强度试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,6 +79,29 @@
             this.与监控管理系统通信功能ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.低压辅助电源试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.输出电压误差ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.稳压精度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.输出电流误差ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.稳流精度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.限压特性ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.限流特性ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.急停功能试验ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.锁止功能试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.开门保护试验ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.输出短路保护试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.协议一致性试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.充电异常状态试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.低压辅助上电及充电握手阶段检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.充电参数配置阶段检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.充电阶段检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.充电结束阶段检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.软启动ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.连接异常试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.工作误差测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.示值误差付费误差测试ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.时钟示值误差测定ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.电池反接试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.充电控制信号检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.充电控制时序检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.串口选择ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.打开串口ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,14 +133,7 @@
             this.acserialPort = new System.IO.Ports.SerialPort(this.components);
             this.textBox_receive = new System.Windows.Forms.TextBox();
             this.clearbtn = new System.Windows.Forms.Button();
-            this.稳压精度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.输出电流误差ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.稳流精度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.限压特性ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.限流特性ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.急停功能试验ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.锁止功能试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.开门保护试验ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.一般检查ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -446,94 +461,263 @@
             this.限流特性ToolStripMenuItem,
             this.急停功能试验ToolStripMenuItem1,
             this.锁止功能试验ToolStripMenuItem,
-            this.开门保护试验ToolStripMenuItem1});
+            this.开门保护试验ToolStripMenuItem1,
+            this.输出短路保护试验ToolStripMenuItem,
+            this.协议一致性试验ToolStripMenuItem,
+            this.充电异常状态试验ToolStripMenuItem,
+            this.低压辅助上电及充电握手阶段检查ToolStripMenuItem,
+            this.充电参数配置阶段检查ToolStripMenuItem,
+            this.充电阶段检查ToolStripMenuItem,
+            this.充电结束阶段检查ToolStripMenuItem,
+            this.软启动ToolStripMenuItem,
+            this.连接异常试验ToolStripMenuItem,
+            this.工作误差测试ToolStripMenuItem,
+            this.示值误差付费误差测试ToolStripMenuItem1,
+            this.时钟示值误差测定ToolStripMenuItem1,
+            this.电池反接试验ToolStripMenuItem,
+            this.充电控制信号检查ToolStripMenuItem,
+            this.充电控制时序检查ToolStripMenuItem});
             this.直流安全巡检项目单项ToolStripMenuItem.Name = "直流安全巡检项目单项ToolStripMenuItem";
             this.直流安全巡检项目单项ToolStripMenuItem.Size = new System.Drawing.Size(148, 21);
             this.直流安全巡检项目单项ToolStripMenuItem.Text = "直流安全巡检项目(单项)";
             // 
-            // 一般检查ToolStripMenuItem1
-            // 
-            this.一般检查ToolStripMenuItem1.Name = "一般检查ToolStripMenuItem1";
-            this.一般检查ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
-            this.一般检查ToolStripMenuItem1.Text = "一般检查";
-            this.一般检查ToolStripMenuItem1.Click += new System.EventHandler(this.一般检查ToolStripMenuItem1_Click);
-            // 
             // 充电模式和连接方式检查ToolStripMenuItem
             // 
             this.充电模式和连接方式检查ToolStripMenuItem.Name = "充电模式和连接方式检查ToolStripMenuItem";
-            this.充电模式和连接方式检查ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.充电模式和连接方式检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.充电模式和连接方式检查ToolStripMenuItem.Text = "充电模式和连接方式检查";
             this.充电模式和连接方式检查ToolStripMenuItem.Click += new System.EventHandler(this.充电模式和连接方式检查ToolStripMenuItem_Click);
             // 
             // 绝缘电阻试验ToolStripMenuItem
             // 
             this.绝缘电阻试验ToolStripMenuItem.Name = "绝缘电阻试验ToolStripMenuItem";
-            this.绝缘电阻试验ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.绝缘电阻试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.绝缘电阻试验ToolStripMenuItem.Text = "绝缘电阻试验";
             this.绝缘电阻试验ToolStripMenuItem.Click += new System.EventHandler(this.绝缘电阻试验ToolStripMenuItem_Click);
             // 
             // 介电强度试验ToolStripMenuItem
             // 
             this.介电强度试验ToolStripMenuItem.Name = "介电强度试验ToolStripMenuItem";
-            this.介电强度试验ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.介电强度试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.介电强度试验ToolStripMenuItem.Text = "介电强度试验";
             this.介电强度试验ToolStripMenuItem.Click += new System.EventHandler(this.介电强度试验ToolStripMenuItem_Click);
             // 
             // 接地测试ToolStripMenuItem1
             // 
             this.接地测试ToolStripMenuItem1.Name = "接地测试ToolStripMenuItem1";
-            this.接地测试ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.接地测试ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
             this.接地测试ToolStripMenuItem1.Text = "接地测试";
             this.接地测试ToolStripMenuItem1.Click += new System.EventHandler(this.接地测试ToolStripMenuItem1_Click);
             // 
             // 剩余电流保护试验ToolStripMenuItem
             // 
             this.剩余电流保护试验ToolStripMenuItem.Name = "剩余电流保护试验ToolStripMenuItem";
-            this.剩余电流保护试验ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.剩余电流保护试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.剩余电流保护试验ToolStripMenuItem.Text = "剩余电流保护试验";
             this.剩余电流保护试验ToolStripMenuItem.Click += new System.EventHandler(this.剩余电流保护试验ToolStripMenuItem_Click);
             // 
             // 显示功能ToolStripMenuItem1
             // 
             this.显示功能ToolStripMenuItem1.Name = "显示功能ToolStripMenuItem1";
-            this.显示功能ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.显示功能ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
             this.显示功能ToolStripMenuItem1.Text = "显示功能";
             this.显示功能ToolStripMenuItem1.Click += new System.EventHandler(this.显示功能ToolStripMenuItem1_Click);
             // 
             // 输入功能ToolStripMenuItem1
             // 
             this.输入功能ToolStripMenuItem1.Name = "输入功能ToolStripMenuItem1";
-            this.输入功能ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.输入功能ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
             this.输入功能ToolStripMenuItem1.Text = "输入功能";
             this.输入功能ToolStripMenuItem1.Click += new System.EventHandler(this.输入功能ToolStripMenuItem1_Click);
             // 
             // 充电功能ToolStripMenuItem1
             // 
             this.充电功能ToolStripMenuItem1.Name = "充电功能ToolStripMenuItem1";
-            this.充电功能ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
+            this.充电功能ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
             this.充电功能ToolStripMenuItem1.Text = "充电功能";
             this.充电功能ToolStripMenuItem1.Click += new System.EventHandler(this.充电功能ToolStripMenuItem1_Click);
             // 
             // 与监控管理系统通信功能ToolStripMenuItem
             // 
             this.与监控管理系统通信功能ToolStripMenuItem.Name = "与监控管理系统通信功能ToolStripMenuItem";
-            this.与监控管理系统通信功能ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.与监控管理系统通信功能ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.与监控管理系统通信功能ToolStripMenuItem.Text = "与监控管理系统通信功能";
             this.与监控管理系统通信功能ToolStripMenuItem.Click += new System.EventHandler(this.与监控管理系统通信功能ToolStripMenuItem_Click);
             // 
             // 低压辅助电源试验ToolStripMenuItem
             // 
             this.低压辅助电源试验ToolStripMenuItem.Name = "低压辅助电源试验ToolStripMenuItem";
-            this.低压辅助电源试验ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.低压辅助电源试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.低压辅助电源试验ToolStripMenuItem.Text = "低压辅助电源试验";
             this.低压辅助电源试验ToolStripMenuItem.Click += new System.EventHandler(this.低压辅助电源试验ToolStripMenuItem_Click);
             // 
             // 输出电压误差ToolStripMenuItem
             // 
             this.输出电压误差ToolStripMenuItem.Name = "输出电压误差ToolStripMenuItem";
-            this.输出电压误差ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.输出电压误差ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
             this.输出电压误差ToolStripMenuItem.Text = "输出电压误差";
             this.输出电压误差ToolStripMenuItem.Click += new System.EventHandler(this.输出电压误差ToolStripMenuItem_Click);
+            // 
+            // 稳压精度ToolStripMenuItem
+            // 
+            this.稳压精度ToolStripMenuItem.Name = "稳压精度ToolStripMenuItem";
+            this.稳压精度ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.稳压精度ToolStripMenuItem.Text = "稳压精度";
+            this.稳压精度ToolStripMenuItem.Click += new System.EventHandler(this.稳压精度ToolStripMenuItem_Click);
+            // 
+            // 输出电流误差ToolStripMenuItem
+            // 
+            this.输出电流误差ToolStripMenuItem.Name = "输出电流误差ToolStripMenuItem";
+            this.输出电流误差ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.输出电流误差ToolStripMenuItem.Text = "输出电流误差";
+            this.输出电流误差ToolStripMenuItem.Click += new System.EventHandler(this.输出电流误差ToolStripMenuItem_Click);
+            // 
+            // 稳流精度ToolStripMenuItem
+            // 
+            this.稳流精度ToolStripMenuItem.Name = "稳流精度ToolStripMenuItem";
+            this.稳流精度ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.稳流精度ToolStripMenuItem.Text = "稳流精度";
+            this.稳流精度ToolStripMenuItem.Click += new System.EventHandler(this.稳流精度ToolStripMenuItem_Click);
+            // 
+            // 限压特性ToolStripMenuItem
+            // 
+            this.限压特性ToolStripMenuItem.Name = "限压特性ToolStripMenuItem";
+            this.限压特性ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.限压特性ToolStripMenuItem.Text = "限压特性";
+            this.限压特性ToolStripMenuItem.Click += new System.EventHandler(this.限压特性ToolStripMenuItem_Click);
+            // 
+            // 限流特性ToolStripMenuItem
+            // 
+            this.限流特性ToolStripMenuItem.Name = "限流特性ToolStripMenuItem";
+            this.限流特性ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.限流特性ToolStripMenuItem.Text = "限流特性";
+            this.限流特性ToolStripMenuItem.Click += new System.EventHandler(this.限流特性ToolStripMenuItem_Click);
+            // 
+            // 急停功能试验ToolStripMenuItem1
+            // 
+            this.急停功能试验ToolStripMenuItem1.Name = "急停功能试验ToolStripMenuItem1";
+            this.急停功能试验ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
+            this.急停功能试验ToolStripMenuItem1.Text = "急停功能试验";
+            this.急停功能试验ToolStripMenuItem1.Click += new System.EventHandler(this.急停功能试验ToolStripMenuItem1_Click);
+            // 
+            // 锁止功能试验ToolStripMenuItem
+            // 
+            this.锁止功能试验ToolStripMenuItem.Name = "锁止功能试验ToolStripMenuItem";
+            this.锁止功能试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.锁止功能试验ToolStripMenuItem.Text = "锁止功能试验";
+            this.锁止功能试验ToolStripMenuItem.Click += new System.EventHandler(this.锁止功能试验ToolStripMenuItem_Click);
+            // 
+            // 开门保护试验ToolStripMenuItem1
+            // 
+            this.开门保护试验ToolStripMenuItem1.Name = "开门保护试验ToolStripMenuItem1";
+            this.开门保护试验ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
+            this.开门保护试验ToolStripMenuItem1.Text = "开门保护试验";
+            this.开门保护试验ToolStripMenuItem1.Click += new System.EventHandler(this.开门保护试验ToolStripMenuItem1_Click);
+            // 
+            // 输出短路保护试验ToolStripMenuItem
+            // 
+            this.输出短路保护试验ToolStripMenuItem.Name = "输出短路保护试验ToolStripMenuItem";
+            this.输出短路保护试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.输出短路保护试验ToolStripMenuItem.Text = "输出短路保护试验";
+            this.输出短路保护试验ToolStripMenuItem.Click += new System.EventHandler(this.输出短路保护试验ToolStripMenuItem_Click);
+            // 
+            // 协议一致性试验ToolStripMenuItem
+            // 
+            this.协议一致性试验ToolStripMenuItem.Name = "协议一致性试验ToolStripMenuItem";
+            this.协议一致性试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.协议一致性试验ToolStripMenuItem.Text = "协议一致性试验";
+            this.协议一致性试验ToolStripMenuItem.Click += new System.EventHandler(this.协议一致性试验ToolStripMenuItem_Click);
+            // 
+            // 充电异常状态试验ToolStripMenuItem
+            // 
+            this.充电异常状态试验ToolStripMenuItem.Name = "充电异常状态试验ToolStripMenuItem";
+            this.充电异常状态试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.充电异常状态试验ToolStripMenuItem.Text = "充电异常状态试验";
+            this.充电异常状态试验ToolStripMenuItem.Click += new System.EventHandler(this.充电异常状态试验ToolStripMenuItem_Click);
+            // 
+            // 低压辅助上电及充电握手阶段检查ToolStripMenuItem
+            // 
+            this.低压辅助上电及充电握手阶段检查ToolStripMenuItem.Name = "低压辅助上电及充电握手阶段检查ToolStripMenuItem";
+            this.低压辅助上电及充电握手阶段检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.低压辅助上电及充电握手阶段检查ToolStripMenuItem.Text = "低压辅助上电及充电握手阶段检查";
+            this.低压辅助上电及充电握手阶段检查ToolStripMenuItem.Click += new System.EventHandler(this.低压辅助上电及充电握手阶段检查ToolStripMenuItem_Click);
+            // 
+            // 充电参数配置阶段检查ToolStripMenuItem
+            // 
+            this.充电参数配置阶段检查ToolStripMenuItem.Name = "充电参数配置阶段检查ToolStripMenuItem";
+            this.充电参数配置阶段检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.充电参数配置阶段检查ToolStripMenuItem.Text = "充电参数配置阶段检查";
+            this.充电参数配置阶段检查ToolStripMenuItem.Click += new System.EventHandler(this.充电参数配置阶段检查ToolStripMenuItem_Click);
+            // 
+            // 充电阶段检查ToolStripMenuItem
+            // 
+            this.充电阶段检查ToolStripMenuItem.Name = "充电阶段检查ToolStripMenuItem";
+            this.充电阶段检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.充电阶段检查ToolStripMenuItem.Text = "充电阶段检查";
+            this.充电阶段检查ToolStripMenuItem.Click += new System.EventHandler(this.充电阶段检查ToolStripMenuItem_Click);
+            // 
+            // 充电结束阶段检查ToolStripMenuItem
+            // 
+            this.充电结束阶段检查ToolStripMenuItem.Name = "充电结束阶段检查ToolStripMenuItem";
+            this.充电结束阶段检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.充电结束阶段检查ToolStripMenuItem.Text = "充电结束阶段检查";
+            this.充电结束阶段检查ToolStripMenuItem.Click += new System.EventHandler(this.充电结束阶段检查ToolStripMenuItem_Click);
+            // 
+            // 软启动ToolStripMenuItem
+            // 
+            this.软启动ToolStripMenuItem.Name = "软启动ToolStripMenuItem";
+            this.软启动ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.软启动ToolStripMenuItem.Text = "软启动";
+            this.软启动ToolStripMenuItem.Click += new System.EventHandler(this.软启动ToolStripMenuItem_Click);
+            // 
+            // 连接异常试验ToolStripMenuItem
+            // 
+            this.连接异常试验ToolStripMenuItem.Name = "连接异常试验ToolStripMenuItem";
+            this.连接异常试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.连接异常试验ToolStripMenuItem.Text = "连接异常试验";
+            this.连接异常试验ToolStripMenuItem.Click += new System.EventHandler(this.连接异常试验ToolStripMenuItem_Click);
+            // 
+            // 工作误差测试ToolStripMenuItem
+            // 
+            this.工作误差测试ToolStripMenuItem.Name = "工作误差测试ToolStripMenuItem";
+            this.工作误差测试ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.工作误差测试ToolStripMenuItem.Text = "工作误差测试";
+            this.工作误差测试ToolStripMenuItem.Click += new System.EventHandler(this.工作误差测试ToolStripMenuItem_Click);
+            // 
+            // 示值误差付费误差测试ToolStripMenuItem1
+            // 
+            this.示值误差付费误差测试ToolStripMenuItem1.Name = "示值误差付费误差测试ToolStripMenuItem1";
+            this.示值误差付费误差测试ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
+            this.示值误差付费误差测试ToolStripMenuItem1.Text = "示值误差、付费误差测试";
+            this.示值误差付费误差测试ToolStripMenuItem1.Click += new System.EventHandler(this.示值误差付费误差测试ToolStripMenuItem1_Click);
+            // 
+            // 时钟示值误差测定ToolStripMenuItem1
+            // 
+            this.时钟示值误差测定ToolStripMenuItem1.Name = "时钟示值误差测定ToolStripMenuItem1";
+            this.时钟示值误差测定ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
+            this.时钟示值误差测定ToolStripMenuItem1.Text = "时钟示值误差测定";
+            this.时钟示值误差测定ToolStripMenuItem1.Click += new System.EventHandler(this.时钟示值误差测定ToolStripMenuItem1_Click);
+            // 
+            // 电池反接试验ToolStripMenuItem
+            // 
+            this.电池反接试验ToolStripMenuItem.Name = "电池反接试验ToolStripMenuItem";
+            this.电池反接试验ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.电池反接试验ToolStripMenuItem.Text = "电池反接试验";
+            this.电池反接试验ToolStripMenuItem.Click += new System.EventHandler(this.电池反接试验ToolStripMenuItem_Click);
+            // 
+            // 充电控制信号检查ToolStripMenuItem
+            // 
+            this.充电控制信号检查ToolStripMenuItem.Name = "充电控制信号检查ToolStripMenuItem";
+            this.充电控制信号检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.充电控制信号检查ToolStripMenuItem.Text = "充电控制信号检查";
+            this.充电控制信号检查ToolStripMenuItem.Click += new System.EventHandler(this.充电控制信号检查ToolStripMenuItem_Click);
+            // 
+            // 充电控制时序检查ToolStripMenuItem
+            // 
+            this.充电控制时序检查ToolStripMenuItem.Name = "充电控制时序检查ToolStripMenuItem";
+            this.充电控制时序检查ToolStripMenuItem.Size = new System.Drawing.Size(256, 22);
+            this.充电控制时序检查ToolStripMenuItem.Text = "充电控制时序检查";
+            this.充电控制时序检查ToolStripMenuItem.Click += new System.EventHandler(this.充电控制时序检查ToolStripMenuItem_Click);
             // 
             // 设置ToolStripMenuItem
             // 
@@ -766,61 +950,12 @@
             this.clearbtn.Visible = false;
             this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
-            // 稳压精度ToolStripMenuItem
+            // 一般检查ToolStripMenuItem1
             // 
-            this.稳压精度ToolStripMenuItem.Name = "稳压精度ToolStripMenuItem";
-            this.稳压精度ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.稳压精度ToolStripMenuItem.Text = "稳压精度";
-            this.稳压精度ToolStripMenuItem.Click += new System.EventHandler(this.稳压精度ToolStripMenuItem_Click);
-            // 
-            // 输出电流误差ToolStripMenuItem
-            // 
-            this.输出电流误差ToolStripMenuItem.Name = "输出电流误差ToolStripMenuItem";
-            this.输出电流误差ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.输出电流误差ToolStripMenuItem.Text = "输出电流误差";
-            this.输出电流误差ToolStripMenuItem.Click += new System.EventHandler(this.输出电流误差ToolStripMenuItem_Click);
-            // 
-            // 稳流精度ToolStripMenuItem
-            // 
-            this.稳流精度ToolStripMenuItem.Name = "稳流精度ToolStripMenuItem";
-            this.稳流精度ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.稳流精度ToolStripMenuItem.Text = "稳流精度";
-            this.稳流精度ToolStripMenuItem.Click += new System.EventHandler(this.稳流精度ToolStripMenuItem_Click);
-            // 
-            // 限压特性ToolStripMenuItem
-            // 
-            this.限压特性ToolStripMenuItem.Name = "限压特性ToolStripMenuItem";
-            this.限压特性ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.限压特性ToolStripMenuItem.Text = "限压特性";
-            this.限压特性ToolStripMenuItem.Click += new System.EventHandler(this.限压特性ToolStripMenuItem_Click);
-            // 
-            // 限流特性ToolStripMenuItem
-            // 
-            this.限流特性ToolStripMenuItem.Name = "限流特性ToolStripMenuItem";
-            this.限流特性ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.限流特性ToolStripMenuItem.Text = "限流特性";
-            this.限流特性ToolStripMenuItem.Click += new System.EventHandler(this.限流特性ToolStripMenuItem_Click);
-            // 
-            // 急停功能试验ToolStripMenuItem1
-            // 
-            this.急停功能试验ToolStripMenuItem1.Name = "急停功能试验ToolStripMenuItem1";
-            this.急停功能试验ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
-            this.急停功能试验ToolStripMenuItem1.Text = "急停功能试验";
-            this.急停功能试验ToolStripMenuItem1.Click += new System.EventHandler(this.急停功能试验ToolStripMenuItem1_Click);
-            // 
-            // 锁止功能试验ToolStripMenuItem
-            // 
-            this.锁止功能试验ToolStripMenuItem.Name = "锁止功能试验ToolStripMenuItem";
-            this.锁止功能试验ToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.锁止功能试验ToolStripMenuItem.Text = "锁止功能试验";
-            this.锁止功能试验ToolStripMenuItem.Click += new System.EventHandler(this.锁止功能试验ToolStripMenuItem_Click);
-            // 
-            // 开门保护试验ToolStripMenuItem1
-            // 
-            this.开门保护试验ToolStripMenuItem1.Name = "开门保护试验ToolStripMenuItem1";
-            this.开门保护试验ToolStripMenuItem1.Size = new System.Drawing.Size(208, 22);
-            this.开门保护试验ToolStripMenuItem1.Text = "开门保护试验";
-            this.开门保护试验ToolStripMenuItem1.Click += new System.EventHandler(this.开门保护试验ToolStripMenuItem1_Click);
+            this.一般检查ToolStripMenuItem1.Name = "一般检查ToolStripMenuItem1";
+            this.一般检查ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
+            this.一般检查ToolStripMenuItem1.Text = "一般检查";
+            this.一般检查ToolStripMenuItem1.Click += new System.EventHandler(this.一般检查ToolStripMenuItem1_Click);
             // 
             // MainFrm
             // 
@@ -920,7 +1055,6 @@
         private System.Windows.Forms.ToolStripMenuItem 时钟示值误差测定ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查看帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 一般检查ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 充电模式和连接方式检查ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 绝缘电阻试验ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 介电强度试验ToolStripMenuItem;
@@ -946,5 +1080,21 @@
         private System.Windows.Forms.ToolStripMenuItem 急停功能试验ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 锁止功能试验ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 开门保护试验ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 输出短路保护试验ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 协议一致性试验ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 充电异常状态试验ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 低压辅助上电及充电握手阶段检查ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 充电参数配置阶段检查ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 充电阶段检查ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 充电结束阶段检查ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 软启动ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 连接异常试验ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 工作误差测试ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 示值误差付费误差测试ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 时钟示值误差测定ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 电池反接试验ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 充电控制信号检查ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 充电控制时序检查ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 一般检查ToolStripMenuItem1;
     }
 }
