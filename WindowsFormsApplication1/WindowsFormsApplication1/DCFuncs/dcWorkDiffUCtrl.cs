@@ -50,7 +50,10 @@ namespace WindowsFormsApplication1.DCFuncs
         #endregion
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if(button1.Text=="启动")
+            {
+                button1.Text = "完成";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

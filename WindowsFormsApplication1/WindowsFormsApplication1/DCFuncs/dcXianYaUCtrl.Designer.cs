@@ -28,21 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dcXianYaUCtrl));
             this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,10 +57,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -128,6 +127,15 @@
             this.label6.TabIndex = 30;
             this.label6.Text = "输出电压测量值2(V)：";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 12);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "输出电压测量值4(V)：";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -136,6 +144,14 @@
             this.label8.Size = new System.Drawing.Size(125, 12);
             this.label8.TabIndex = 30;
             this.label8.Text = "输出电压测量值3(V)：";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(147, 115);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(73, 21);
+            this.textBox3.TabIndex = 73;
+            this.textBox3.Text = "0";
             // 
             // textBox6
             // 
@@ -159,7 +175,14 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(73, 21);
             this.textBox11.TabIndex = 73;
-            this.textBox11.Text = "合格";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(358, 112);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(73, 21);
+            this.textBox7.TabIndex = 73;
+            this.textBox7.Text = "0";
             // 
             // textBox10
             // 
@@ -201,6 +224,15 @@
             this.label9.Size = new System.Drawing.Size(53, 12);
             this.label9.TabIndex = 30;
             this.label9.Text = "测试结果";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(234, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 12);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "输出电流测量值4(A)：";
             // 
             // label10
             // 
@@ -257,7 +289,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(73, 21);
             this.textBox2.TabIndex = 73;
-            this.textBox2.Text = "0";
+            this.textBox2.Text = "13.5";
             // 
             // textBox1
             // 
@@ -265,7 +297,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 21);
             this.textBox1.TabIndex = 73;
-            this.textBox1.Text = "0";
+            this.textBox1.Text = "500";
             // 
             // label2
             // 
@@ -287,12 +319,13 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(14, 308);
+            this.richTextBox1.Location = new System.Drawing.Point(14, 321);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(472, 135);
+            this.richTextBox1.Size = new System.Drawing.Size(472, 94);
             this.richTextBox1.TabIndex = 55;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "步骤1：断开负载，启动桩和BMS，待充电机输出电压达到设定值后，手动接入小于输出电压÷输出电流的负载，使充电机工作在稳流状态，点击“测试按钮”，测量出稳流状态1对" +
+    "应的数据，然后断开负载后，点“下一步”。\n";
             // 
             // button2
             // 
@@ -301,43 +334,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 56;
-            this.button2.Text = "返回";
+            this.button2.Text = "下一步";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 12);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "输出电压测量值4(V)：";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(147, 115);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 21);
-            this.textBox3.TabIndex = 73;
-            this.textBox3.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(234, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 12);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "输出电流测量值4(A)：";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(358, 112);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(73, 21);
-            this.textBox7.TabIndex = 73;
-            this.textBox7.Text = "0";
             // 
             // dcXianYaUCtrl
             // 

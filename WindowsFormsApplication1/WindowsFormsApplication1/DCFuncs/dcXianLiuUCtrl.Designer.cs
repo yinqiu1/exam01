@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dcXianLiuUCtrl));
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -100,7 +99,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(73, 21);
             this.textBox2.TabIndex = 73;
-            this.textBox2.Text = "0";
+            this.textBox2.Text = "13.5";
             // 
             // textBox1
             // 
@@ -108,7 +107,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 21);
             this.textBox1.TabIndex = 73;
-            this.textBox1.Text = "0";
+            this.textBox1.Text = "500";
             // 
             // label2
             // 
@@ -190,12 +189,13 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(14, 312);
+            this.richTextBox1.Location = new System.Drawing.Point(14, 322);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(472, 135);
+            this.richTextBox1.Size = new System.Drawing.Size(472, 94);
             this.richTextBox1.TabIndex = 62;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "步骤1：断开负载，启动桩和BMS，待充电机输出电压达到设定值后，手动接入小于输出电压÷输出电流的负载，使充电机工作在稳流状态，点击“测试按钮”，测量出稳流状态1对" +
+    "应的数据，然后断开负载后，点“下一步”。";
             // 
             // textBox11
             // 
@@ -203,7 +203,6 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(73, 21);
             this.textBox11.TabIndex = 73;
-            this.textBox11.Text = "合格";
             // 
             // textBox10
             // 
@@ -236,7 +235,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 63;
-            this.button2.Text = "返回";
+            this.button2.Text = "下一步";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

@@ -67,10 +67,7 @@ namespace WindowsFormsApplication1.Funcs
                 MessageBox.Show("请选择测试结果！");
             }
             //用户输入存入数据库
-            if (usrRtbx.Text != "")
-            {
-
-            }
+            
         }
     }
 }

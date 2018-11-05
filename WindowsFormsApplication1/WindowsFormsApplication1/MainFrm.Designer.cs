@@ -68,6 +68,7 @@
             this.示值误差付费误差测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.时钟示值误差测定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.直流安全巡检项目单项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.一般检查ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.充电模式和连接方式检查ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.绝缘电阻试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.介电强度试验ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -120,10 +121,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.fullemptycbx = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.sortid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.startbtn = new System.Windows.Forms.Button();
@@ -133,7 +130,10 @@
             this.acserialPort = new System.IO.Ports.SerialPort(this.components);
             this.textBox_receive = new System.Windows.Forms.TextBox();
             this.clearbtn = new System.Windows.Forms.Button();
-            this.一般检查ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.sortid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.testname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.result = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -480,6 +480,13 @@
             this.直流安全巡检项目单项ToolStripMenuItem.Name = "直流安全巡检项目单项ToolStripMenuItem";
             this.直流安全巡检项目单项ToolStripMenuItem.Size = new System.Drawing.Size(148, 21);
             this.直流安全巡检项目单项ToolStripMenuItem.Text = "直流安全巡检项目(单项)";
+            // 
+            // 一般检查ToolStripMenuItem1
+            // 
+            this.一般检查ToolStripMenuItem1.Name = "一般检查ToolStripMenuItem1";
+            this.一般检查ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
+            this.一般检查ToolStripMenuItem1.Text = "一般检查";
+            this.一般检查ToolStripMenuItem1.Click += new System.EventHandler(this.一般检查ToolStripMenuItem1_Click);
             // 
             // 充电模式和连接方式检查ToolStripMenuItem
             // 
@@ -870,31 +877,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(468, 458);
             this.dataGridView1.TabIndex = 6;
             // 
-            // checkbox
-            // 
-            this.checkbox.HeaderText = "全选";
-            this.checkbox.Name = "checkbox";
-            this.checkbox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.checkbox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.checkbox.Width = 55;
-            // 
-            // sortid
-            // 
-            this.sortid.HeaderText = "序号";
-            this.sortid.Name = "sortid";
-            this.sortid.Width = 55;
-            // 
-            // testname
-            // 
-            this.testname.HeaderText = "测试项目";
-            this.testname.Name = "testname";
-            this.testname.Width = 170;
-            // 
-            // result
-            // 
-            this.result.HeaderText = "结果";
-            this.result.Name = "result";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label18);
@@ -950,12 +932,30 @@
             this.clearbtn.Visible = false;
             this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
             // 
-            // 一般检查ToolStripMenuItem1
+            // checkbox
             // 
-            this.一般检查ToolStripMenuItem1.Name = "一般检查ToolStripMenuItem1";
-            this.一般检查ToolStripMenuItem1.Size = new System.Drawing.Size(256, 22);
-            this.一般检查ToolStripMenuItem1.Text = "一般检查";
-            this.一般检查ToolStripMenuItem1.Click += new System.EventHandler(this.一般检查ToolStripMenuItem1_Click);
+            this.checkbox.HeaderText = "全选";
+            this.checkbox.Name = "checkbox";
+            this.checkbox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.checkbox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.checkbox.Width = 55;
+            // 
+            // sortid
+            // 
+            this.sortid.HeaderText = "序号";
+            this.sortid.Name = "sortid";
+            this.sortid.Width = 55;
+            // 
+            // testname
+            // 
+            this.testname.HeaderText = "测试项目";
+            this.testname.Name = "testname";
+            this.testname.Width = 240;
+            // 
+            // result
+            // 
+            this.result.HeaderText = "结果";
+            this.result.Name = "result";
             // 
             // MainFrm
             // 
@@ -1037,10 +1037,6 @@
         private System.Windows.Forms.ToolStripMenuItem 直流安全巡检项目单项ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 直流测试顺序设置ToolStripMenuItem;
         private System.Windows.Forms.CheckBox fullemptycbx;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn checkbox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sortid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn testname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn result;
         private System.IO.Ports.SerialPort agserialPort;
         private System.IO.Ports.SerialPort jlserialPort;
         private System.Windows.Forms.ToolStripStatusLabel jltoolStripStatusLabel;
@@ -1096,5 +1092,9 @@
         private System.Windows.Forms.ToolStripMenuItem 充电控制信号检查ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 充电控制时序检查ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 一般检查ToolStripMenuItem1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn checkbox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sortid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn testname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn result;
     }
 }

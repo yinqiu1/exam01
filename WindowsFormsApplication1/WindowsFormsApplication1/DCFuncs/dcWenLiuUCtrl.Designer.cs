@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dcWenLiuUCtrl));
             this.label18 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -78,16 +77,17 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 21);
             this.textBox1.TabIndex = 73;
-            this.textBox1.Text = "0";
+            this.textBox1.Text = "750";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(14, 300);
+            this.richTextBox1.Location = new System.Drawing.Point(14, 310);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(472, 135);
+            this.richTextBox1.Size = new System.Drawing.Size(472, 85);
             this.richTextBox1.TabIndex = 48;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "步骤1：断开负载，启动桩和BMS，待充电机输出电压达到设定值后，手动接入电阻略小于 200÷输出电流整定值的负载，点击“测试按钮”，测量出测试点1对应的数据，然后" +
+    "断开负载后，点“下一步”。";
             // 
             // textBox2
             // 
@@ -95,7 +95,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(73, 21);
             this.textBox2.TabIndex = 73;
-            this.textBox2.Text = "0";
+            this.textBox2.Text = "13.5";
             // 
             // label4
             // 
@@ -163,7 +163,6 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(73, 21);
             this.textBox11.TabIndex = 73;
-            this.textBox11.Text = "合格";
             // 
             // textBox10
             // 
@@ -196,7 +195,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 49;
-            this.button2.Text = "返回";
+            this.button2.Text = "下一步";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -239,7 +238,7 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(73, 21);
             this.textBox12.TabIndex = 73;
-            this.textBox12.Text = "0";
+            this.textBox12.Text = "1";
             // 
             // label12
             // 

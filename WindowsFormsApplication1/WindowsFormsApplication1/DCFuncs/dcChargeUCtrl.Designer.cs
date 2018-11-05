@@ -102,7 +102,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 44);
             this.button1.TabIndex = 89;
-            this.button1.Text = "测试";
+            this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

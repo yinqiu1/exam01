@@ -18,6 +18,7 @@ namespace WindowsFormsApplication1.DCFuncs
         public dcXieYiUCtrl()
         {
             InitializeComponent();
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         #region 变量定义、委托定义

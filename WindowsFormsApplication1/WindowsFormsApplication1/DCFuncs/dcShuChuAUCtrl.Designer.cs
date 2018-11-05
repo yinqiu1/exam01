@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dcShuChuAUCtrl));
             this.label18 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,13 +56,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +83,7 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(73, 21);
             this.textBox12.TabIndex = 73;
-            this.textBox12.Text = "0";
+            this.textBox12.Text = "750";
             // 
             // label12
             // 
@@ -177,7 +176,6 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(73, 21);
             this.textBox11.TabIndex = 73;
-            this.textBox11.Text = "合格";
             // 
             // textBox10
             // 
@@ -262,7 +260,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 21);
             this.textBox1.TabIndex = 73;
-            this.textBox1.Text = "0";
+            this.textBox1.Text = "27";
             // 
             // label2
             // 
@@ -284,12 +282,13 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(14, 318);
+            this.richTextBox1.Location = new System.Drawing.Point(14, 330);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(472, 120);
+            this.richTextBox1.Size = new System.Drawing.Size(472, 96);
             this.richTextBox1.TabIndex = 41;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "步骤1：断开负载，启动桩和BMS，待充电机输出电压达到设定值后，手动接入略小于500÷输出电流整定值1的负载后，点击“测试”，测量出整定值1对应的数据，然后断开负" +
+    "载后，点“下一步”。\n";
             // 
             // textBox2
             // 
@@ -297,7 +296,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(73, 21);
             this.textBox2.TabIndex = 73;
-            this.textBox2.Text = "0";
+            this.textBox2.Text = "13.5";
             // 
             // button2
             // 
@@ -306,7 +305,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 42;
-            this.button2.Text = "返回";
+            this.button2.Text = "下一步";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -340,13 +339,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "① 参数设置";
             // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(148, 66);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(73, 21);
+            this.textBox13.TabIndex = 73;
+            this.textBox13.Text = "1";
+            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(148, 42);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(73, 21);
             this.textBox3.TabIndex = 73;
-            this.textBox3.Text = "0";
+            this.textBox3.Text = "5.4";
             // 
             // label13
             // 
@@ -356,6 +363,32 @@
             this.label13.Size = new System.Drawing.Size(125, 12);
             this.label13.TabIndex = 30;
             this.label13.Text = "输出电流整定值1(A)：";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(358, 66);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(73, 21);
+            this.textBox14.TabIndex = 73;
+            this.textBox14.Text = "0.3";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(227, 69);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(125, 12);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "判断准则2(A)：    ±";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 12);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "判断准则1(%)：    ±";
             // 
             // button1
             // 
@@ -367,40 +400,6 @@
             this.button1.Text = "测试";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 12);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "判断准则1(%)：    ±";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(148, 66);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(73, 21);
-            this.textBox13.TabIndex = 73;
-            this.textBox13.Text = "0";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(227, 69);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(125, 12);
-            this.label14.TabIndex = 30;
-            this.label14.Text = "判断准则2(A)：    ±";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(358, 66);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(73, 21);
-            this.textBox14.TabIndex = 73;
-            this.textBox14.Text = "0";
             // 
             // dcShuChuAUCtrl
             // 

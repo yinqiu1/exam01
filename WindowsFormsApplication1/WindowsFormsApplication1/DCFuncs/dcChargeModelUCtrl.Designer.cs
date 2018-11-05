@@ -39,7 +39,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.Fail = new System.Windows.Forms.RadioButton();
             this.Pass = new System.Windows.Forms.RadioButton();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -151,24 +154,63 @@
             this.Pass.Text = "Pass";
             this.Pass.UseVisualStyleBackColor = true;
             // 
-            // richTextBox3
+            // comboBox2
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(72, 293);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.Size = new System.Drawing.Size(358, 67);
-            this.richTextBox3.TabIndex = 34;
-            this.richTextBox3.Text = "充电模式：模式4--（默认模式4，有模式1/2/3/4可供选择）\n连接方式：连接方式C--（默认连接方式C，有连接方式A/B/C三种可供选择）";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "连接方式A",
+            "连接方式B",
+            "连接方式C"});
+            this.comboBox2.Location = new System.Drawing.Point(331, 313);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(99, 20);
+            this.comboBox2.TabIndex = 42;
+            this.comboBox2.Text = "连接方式C";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "模式1",
+            "模式2",
+            "模式3",
+            "模式4"});
+            this.comboBox1.Location = new System.Drawing.Point(141, 313);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(70, 20);
+            this.comboBox1.TabIndex = 43;
+            this.comboBox1.Text = "模式4";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(260, 316);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "连接方式：";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(70, 316);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "充电模式：";
             // 
             // dcChargeModelUCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Fail);
             this.Controls.Add(this.Pass);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
@@ -196,6 +238,9 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.RadioButton Fail;
         private System.Windows.Forms.RadioButton Pass;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

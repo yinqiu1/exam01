@@ -21,6 +21,7 @@ namespace WindowsFormsApplication1
         public MainFrm()
         {
             InitializeComponent();
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
 
             initComSettings();            

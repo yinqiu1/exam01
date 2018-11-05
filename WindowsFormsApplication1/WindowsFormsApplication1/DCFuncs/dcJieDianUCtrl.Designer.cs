@@ -192,18 +192,18 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(70, 95);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 12);
+            this.label5.Size = new System.Drawing.Size(83, 12);
             this.label5.TabIndex = 66;
-            this.label5.Text = "试验时间：s";
+            this.label5.Text = "试验时间(s)：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(70, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 12);
+            this.label4.Size = new System.Drawing.Size(89, 12);
             this.label4.TabIndex = 65;
-            this.label4.Text = "试验电压(kVDC)：";
+            this.label4.Text = "试验电压(kV)：";
             // 
             // label19
             // 

@@ -37,7 +37,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.confirmbtn = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.resuallbl = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -135,15 +135,6 @@
             this.confirmbtn.UseVisualStyleBackColor = true;
             this.confirmbtn.Click += new System.EventHandler(this.confirmbtn_Click);
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(79, 249);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.Size = new System.Drawing.Size(135, 21);
-            this.richTextBox2.TabIndex = 145;
-            this.richTextBox2.Text = "1、接地电阻(mΩ) ≤ ";
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(79, 161);
@@ -203,18 +194,18 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(77, 124);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 12);
+            this.label5.Size = new System.Drawing.Size(83, 12);
             this.label5.TabIndex = 142;
-            this.label5.Text = "试验时间：s";
+            this.label5.Text = "试验时间(s)：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(77, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 12);
+            this.label4.Size = new System.Drawing.Size(83, 12);
             this.label4.TabIndex = 141;
-            this.label4.Text = "测试电流：A";
+            this.label4.Text = "测试电流(A)：";
             // 
             // label19
             // 
@@ -235,6 +226,15 @@
             this.label18.TabIndex = 144;
             this.label18.Text = "接地测试";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(86, 252);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 12);
+            this.label6.TabIndex = 136;
+            this.label6.Text = "1、接地电阻(mΩ) ≤";
+            // 
             // dcJieDiUCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -248,8 +248,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.confirmbtn);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.resuallbl);
             this.Controls.Add(this.label1);
@@ -277,7 +277,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button confirmbtn;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label resuallbl;
@@ -288,6 +287,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label6;
 
     }
 }

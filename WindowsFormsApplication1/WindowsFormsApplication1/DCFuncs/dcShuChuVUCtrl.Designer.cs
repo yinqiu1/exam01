@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dcShuChuVUCtrl));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -37,9 +36,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,8 +59,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +70,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 36;
-            this.button2.Text = "返回";
+            this.button2.Text = "下一步";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -88,12 +87,12 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(13, 316);
+            this.richTextBox1.Location = new System.Drawing.Point(13, 320);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(472, 110);
+            this.richTextBox1.Size = new System.Drawing.Size(472, 76);
             this.richTextBox1.TabIndex = 35;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "步骤1：断开负载，启动桩和BMS，待输出电压达到整定值1后，手动接入50%额定负载，点击“测试”，测量出整定值1对应的数据，然后断开负载，点“下一步”。";
             // 
             // label21
             // 
@@ -137,7 +136,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(73, 21);
             this.textBox3.TabIndex = 73;
-            this.textBox3.Text = "0";
+            this.textBox3.Text = "200";
             // 
             // label1
             // 
@@ -148,13 +147,21 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "输出电压整定值1(V)：";
             // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(358, 42);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(73, 21);
+            this.textBox12.TabIndex = 73;
+            this.textBox12.Text = "0.5";
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(358, 18);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(73, 21);
             this.textBox2.TabIndex = 73;
-            this.textBox2.Text = "0";
+            this.textBox2.Text = "500";
             // 
             // textBox1
             // 
@@ -162,7 +169,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 21);
             this.textBox1.TabIndex = 73;
-            this.textBox1.Text = "0";
+            this.textBox1.Text = "750";
             // 
             // label2
             // 
@@ -172,6 +179,15 @@
             this.label2.Size = new System.Drawing.Size(125, 12);
             this.label2.TabIndex = 30;
             this.label2.Text = "输出电压整定值2(V)：";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(227, 45);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(119, 12);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "判断准则(%)：    ±";
             // 
             // label3
             // 
@@ -264,7 +280,6 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(73, 21);
             this.textBox11.TabIndex = 73;
-            this.textBox11.Text = "合格";
             // 
             // textBox10
             // 
@@ -342,23 +357,6 @@
             this.label7.Size = new System.Drawing.Size(65, 12);
             this.label7.TabIndex = 30;
             this.label7.Text = "误差2(%)：";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(227, 45);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 12);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "判断准则(%)：    ±";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(358, 42);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(73, 21);
-            this.textBox12.TabIndex = 73;
-            this.textBox12.Text = "0";
             // 
             // dcShuChuVUCtrl
             // 

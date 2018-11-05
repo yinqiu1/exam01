@@ -148,7 +148,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 12);
             this.label4.TabIndex = 47;
-            this.label4.Text = "试验电压：kVAC";
+            this.label4.Text = "试验电压(kV)：";
             // 
             // label19
             // 
@@ -174,9 +174,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(70, 99);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 12);
+            this.label5.Size = new System.Drawing.Size(83, 12);
             this.label5.TabIndex = 47;
-            this.label5.Text = "试验时间：s";
+            this.label5.Text = "试验时间(s)：";
             // 
             // textBox2
             // 
