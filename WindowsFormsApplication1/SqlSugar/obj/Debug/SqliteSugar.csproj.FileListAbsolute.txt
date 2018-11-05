@@ -21,3 +21,11 @@ D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\Sq
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Data.SQLite.dll
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Data.SQLite.xml
 D:\workspaces\VisualStudio\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.dll
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\SqliteSugar.XML
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\SqliteSugar.dll
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\SqliteSugar.pdb
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Data.SQLite.dll
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\bin\Debug\System.Data.SQLite.xml
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.csprojResolveAssemblyReference.cache
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.dll
+D:\workspaces\github.com\exam01\WindowsFormsApplication1\SqlSugar\obj\Debug\SqliteSugar.pdb

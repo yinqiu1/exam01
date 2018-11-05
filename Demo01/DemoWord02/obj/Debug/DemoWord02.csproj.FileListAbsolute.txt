@@ -1,0 +1,7 @@
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\bin\Debug\DemoWord02.exe.config
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\obj\Debug\DemoWord02.csproj.ResolveComReference.cache
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\bin\Debug\DemoWord02.exe
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\bin\Debug\DemoWord02.pdb
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\obj\Debug\DemoWord02.csprojResolveAssemblyReference.cache
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\obj\Debug\DemoWord02.exe
+D:\workspaces\github.com\exam01\Demo01\DemoWord02\obj\Debug\DemoWord02.pdb
