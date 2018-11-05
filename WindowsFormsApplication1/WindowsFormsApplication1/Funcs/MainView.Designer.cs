@@ -93,7 +93,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 14;
-            this.label6.Text = "充电状态";
+            this.label6.Text = "设备状态";
             // 
             // label4
             // 

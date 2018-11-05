@@ -1107,7 +1107,7 @@ namespace WindowsFormsApplication1
                 //MessageBox.Show("acC12C");
                 Com.acboard.cpvolt = (toolFunc.slice1Byte(data, 5, 1)).ToString();
                 Com.acboard.cpfr = (toolFunc.slice2BytesArray(data, 6, 2)).ToString();
-                Com.acboard.cpduty = (toolFunc.slice2BytesArray(data, 8, 1)).ToString() + "%";
+                Com.acboard.cpduty = (toolFunc.slice2BytesArray(data, 8, 1)).ToString();
                 Com.acboard.cpcu = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 9, 2)) / 10).ToString("0.0");
                 //发送返回指令
                 Thread.Sleep(5);
@@ -1120,7 +1120,7 @@ namespace WindowsFormsApplication1
                 //MessageBox.Show("acC13C");
                 Com.acboard.cpvolt = (toolFunc.slice2BytesArray(data, 5, 1)).ToString();
                 Com.acboard.cpfr = (toolFunc.slice2BytesArray(data, 6, 2)).ToString();
-                Com.acboard.cpduty = (toolFunc.slice2BytesArray(data, 8, 1)).ToString() + "%";
+                Com.acboard.cpduty = (toolFunc.slice2BytesArray(data, 8, 1)).ToString();
                 Com.acboard.cpcu = (Convert.ToSingle(toolFunc.slice2BytesArray(data, 9, 2)) / 10).ToString("0.0");
                 //发送返回指令
                 Thread.Sleep(5);
@@ -1128,7 +1128,7 @@ namespace WindowsFormsApplication1
                 acserialPort.Write(array, 0, array.Length);
             }
             //********************************连接状态*********************************
-            //D1 2C 设备状态-1byte 0x00 空闲状态 0x01 充电状态 0x02 故障状态
+            //D1 2C 设备状态-1byte 设备状态= 00：显示“空闲” ；01～03 界面都显示“充电中”；EA～EC界面都显示“故障”；
             if (cmd.SequenceEqual(Com.acboard.acD12C))
             {
                 //MessageBox.Show("acD12C");
@@ -1136,7 +1136,7 @@ namespace WindowsFormsApplication1
                 switch (sw)
                 {
                     case 0:
-                        Com.acboard.chargestatus = "空闲状态";
+                        Com.acboard.chargestatus = "空闲";
                         //其他的状态也需要初始化一次，全部是0
                         Com.acboard.cpvolt = "0";
                         Com.acboard.cpfr = "0";
@@ -1152,10 +1152,22 @@ namespace WindowsFormsApplication1
                         Com.acboard.chargeSingle = "0";
                         break;
                     case 1:
-                        Com.acboard.chargestatus = "充电状态";
+                        Com.acboard.chargestatus = "充电中";
                         break;
                     case 2:
-                        Com.acboard.chargestatus = "故障状态";
+                        Com.acboard.chargestatus = "充电中";
+                        break;
+                    case 3:
+                        Com.acboard.chargestatus = "充电中";
+                        break;
+                    case 234:
+                        Com.acboard.chargestatus = "故障";
+                        break;
+                    case 235:
+                        Com.acboard.chargestatus = "故障";
+                        break;
+                    case 236:
+                        Com.acboard.chargestatus = "故障";
                         break;
                 }
                 //发送返回指令

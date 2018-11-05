@@ -131,17 +131,17 @@ namespace WindowsFormsApplication1.Funcs
                 }
                 //测试指令
                 recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest05.Trim()));
-                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev05.Trim())))
-                {
-                    MessageBox.Show("设备测试指令异常5");
-                    return;
-                }
+                //if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev05.Trim())))
+                //{
+                //    MessageBox.Show("设备测试指令异常5");
+                //    return;
+                //}
                 recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest06.Trim()));
-                if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev06.Trim())))
-                {
-                    MessageBox.Show("设备测试指令异常6");
-                    return;
-                }
+                //if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev06.Trim())))
+                //{
+                //    MessageBox.Show("设备测试指令异常6");
+                //    return;
+                //}
 
                 recData = toolFunc.ReadPort(com, toolFunc.HexStringToByteArray(ainuoangui.jydztest01.Trim()));
                 if (!recData.SequenceEqual(toolFunc.HexStringToByteArray(ainuoangui.jydztestrev01.Trim())))
