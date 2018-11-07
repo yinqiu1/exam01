@@ -43,7 +43,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.resultlabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.process = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox2
@@ -73,6 +73,7 @@
             this.button1.TabIndex = 183;
             this.button1.Text = "测试";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBox2
             // 
@@ -135,7 +136,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 12);
             this.label5.TabIndex = 178;
-            this.label5.Text = "输入电流(A)：";
+            this.label5.Text = "输出电流(A)：";
             // 
             // label4
             // 
@@ -144,7 +145,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 12);
             this.label4.TabIndex = 177;
-            this.label4.Text = "输入电压(V)：";
+            this.label4.Text = "输出电压(V)：";
             // 
             // label19
             // 
@@ -185,22 +186,22 @@
             this.resultlabel.TabIndex = 191;
             this.resultlabel.Text = "状态:未测试";
             // 
-            // label6
+            // process
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 15F);
-            this.label6.Location = new System.Drawing.Point(207, 388);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 20);
-            this.label6.TabIndex = 192;
-            this.label6.Text = "waiting...";
+            this.process.AutoSize = true;
+            this.process.Font = new System.Drawing.Font("宋体", 15F);
+            this.process.Location = new System.Drawing.Point(207, 388);
+            this.process.Name = "process";
+            this.process.Size = new System.Drawing.Size(109, 20);
+            this.process.TabIndex = 192;
+            this.process.Text = "waiting...";
             // 
             // ShengYuUCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.resultlabel);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.process);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -239,6 +240,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label resultlabel;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label process;
     }
 }

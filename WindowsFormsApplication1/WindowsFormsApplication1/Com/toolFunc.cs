@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1.Com
             {
                 Thread.Sleep(1);
                 i++;
-                if (i > 100)
+                if (i > 10000)
                     break;
             }
             Thread.Sleep(50); //50毫秒内数据接收完毕，可根据实际情况调整

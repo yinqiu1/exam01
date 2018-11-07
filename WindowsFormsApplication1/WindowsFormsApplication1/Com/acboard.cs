@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO.Ports;
+using System.Threading;
 
 namespace WindowsFormsApplication1.Com
 {
@@ -82,6 +83,20 @@ namespace WindowsFormsApplication1.Com
         //D1 2C 设备状态-1byte 0x00 空闲状态 0x01 充电状态 0x02 故障状态
         //public static string acD12CSend = "8b 00 03 D1 2C 00 b8 69";
         public static string pcD1C2Send = "8b 00 03 D1 C2 01 b8 22";
+
+        //----------------------控制接地电阻接通--------------
+        public static byte[] acF12C = { 0xF1, 0x2C };
+        public static bool CmdOk = false;
+        public static string pcF1C2Send0 = "8B 00 04 F1 C2 01 01 B8 04";
+        public static string pcF12CRece00 = "8B 00 04 F1 2C 01 01 B8 EA";//操作成功
+        public static string pcF12CRece01 = "8B 00 04 F1 2C 01 00 B8 EB";//操作失败
+
+        //----------------------控制接地电阻断开--------------
+        public static string pcF1C2Send1 = "8B 00 04 F1 C2 01 00 B8 05";
+        public static string pcF12CRece10 = "8B 00 04 F1 2C 01 01 B8 EA";//操作成功
+        public static string pcF12CRece11 = "8B 00 04 F1 2C 01 00 B8 EB";//操作失败
+
+
 
     }
 }

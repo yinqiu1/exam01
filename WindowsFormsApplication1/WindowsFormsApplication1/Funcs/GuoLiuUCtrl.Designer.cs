@@ -90,7 +90,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 12);
             this.label3.TabIndex = 76;
-            this.label3.Text = "输入电流(A):";
+            this.label3.Text = "输出电流(A):";
             // 
             // resuallbl
             // 
@@ -175,7 +175,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 12);
             this.label2.TabIndex = 76;
-            this.label2.Text = "输入电压(V): ";
+            this.label2.Text = "输出电压(V): ";
             // 
             // textBox2
             // 

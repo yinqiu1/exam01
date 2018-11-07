@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -50,37 +50,39 @@
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(176, 119);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(73, 21);
+            this.textBox22.TabIndex = 132;
+            this.textBox22.Text = "1";
+            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(176, 119);
+            this.textBox2.Location = new System.Drawing.Point(207, 355);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(73, 21);
-            this.textBox2.TabIndex = 132;
-            this.textBox2.Text = "1";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(207, 355);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(73, 21);
-            this.textBox4.TabIndex = 131;
-            this.textBox4.Text = "0";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(207, 328);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 21);
-            this.textBox3.TabIndex = 130;
-            this.textBox3.Text = "0";
+            this.textBox2.TabIndex = 131;
+            this.textBox2.Text = "0";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 91);
+            this.textBox1.Location = new System.Drawing.Point(207, 328);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(73, 21);
-            this.textBox1.TabIndex = 129;
-            this.textBox1.Text = "2";
+            this.textBox1.TabIndex = 130;
+            this.textBox1.Text = "0";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(176, 91);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(73, 21);
+            this.textBox11.TabIndex = 129;
+            this.textBox11.Text = "2";
             // 
             // button1
             // 
@@ -239,10 +241,10 @@
             this.Controls.Add(this.resultlabel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox22);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
@@ -265,10 +267,10 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;

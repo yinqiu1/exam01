@@ -44,20 +44,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.Fail = new System.Windows.Forms.RadioButton();
             this.Pass = new System.Windows.Forms.RadioButton();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(185, 312);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(73, 21);
             this.textBox2.TabIndex = 75;
             this.textBox2.Text = "0";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 284);
+            this.textBox1.Location = new System.Drawing.Point(185, 276);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(73, 21);
             this.textBox1.TabIndex = 72;
             this.textBox1.Text = "0";
@@ -65,7 +68,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 15F);
-            this.button1.Location = new System.Drawing.Point(81, 437);
+            this.button1.Location = new System.Drawing.Point(185, 437);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 44);
             this.button1.TabIndex = 69;
@@ -139,7 +142,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(79, 287);
+            this.label4.Location = new System.Drawing.Point(79, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 12);
             this.label4.TabIndex = 63;
@@ -167,7 +170,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 15F);
-            this.button2.Location = new System.Drawing.Point(260, 437);
+            this.button2.Location = new System.Drawing.Point(328, 437);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 44);
             this.button2.TabIndex = 76;
@@ -197,6 +200,17 @@
             this.Pass.Text = "Pass";
             this.Pass.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("宋体", 15F);
+            this.button3.Location = new System.Drawing.Point(38, 437);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(130, 44);
+            this.button3.TabIndex = 69;
+            this.button3.Text = "测试";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // ChargeUCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -206,6 +220,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
@@ -242,5 +257,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RadioButton Fail;
         private System.Windows.Forms.RadioButton Pass;
+        private System.Windows.Forms.Button button3;
     }
 }

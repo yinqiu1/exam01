@@ -207,24 +207,19 @@ namespace WindowsFormsApplication1
 
         private void 剩余电流保护ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //通过类名获取类的类型
-            Type type = Type.GetType("WindowsFormsApplication1.Funcs.ShengYuUCtrl");
-            object obj = Activator.CreateInstance(type);
-            Funcs.ShengYuUCtrl func = (Funcs.ShengYuUCtrl)obj;
-            func.DataChange += new Funcs.ShengYuUCtrl.DataChangeHandler(Back2MainView);
+            Funcs.ShengYuUCtrl cm = new Funcs.ShengYuUCtrl(jlserialPort,acserialPort);
+            cm.DataChange += new Funcs.ShengYuUCtrl.DataChangeHandler(Back2MainView);
             panel2.Controls.Clear();
-            panel2.Controls.Add(func);
+            panel2.Controls.Add(cm);
         }
 
         private void 连接异常ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //通过类名获取类的类型
-            Type type = Type.GetType("WindowsFormsApplication1.Funcs.LianJieYiChangUCtrl");
-            object obj = Activator.CreateInstance(type);
-            Funcs.LianJieYiChangUCtrl func = (Funcs.LianJieYiChangUCtrl)obj;
-            func.DataChange += new Funcs.LianJieYiChangUCtrl.DataChangeHandler(Back2MainView);
+
+            Funcs.LianJieYiChangUCtrl cm = new Funcs.LianJieYiChangUCtrl(jlserialPort);
+            cm.DataChange += new Funcs.LianJieYiChangUCtrl.DataChangeHandler(Back2MainView);
             panel2.Controls.Clear();
-            panel2.Controls.Add(func);
+            panel2.Controls.Add(cm);
         }
 
         private void 接地测试ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -257,12 +252,10 @@ namespace WindowsFormsApplication1
 
         private void 充电功能ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Type type = Type.GetType("WindowsFormsApplication1.Funcs.ChargeUCtrl");
-            object obj = Activator.CreateInstance(type);
-            Funcs.ChargeUCtrl func = (Funcs.ChargeUCtrl)obj;
-            func.DataChange += new Funcs.ChargeUCtrl.DataChangeHandler(Back2MainView);
+            Funcs.ChargeUCtrl cm = new Funcs.ChargeUCtrl(jlserialPort);
+            cm.DataChange += new Funcs.ChargeUCtrl.DataChangeHandler(Back2MainView);
             panel2.Controls.Clear();
-            panel2.Controls.Add(func);
+            panel2.Controls.Add(cm);
         }
 
         private void 监控管理系统通信ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -277,22 +270,18 @@ namespace WindowsFormsApplication1
 
         private void 急停功能试验ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Type type = Type.GetType("WindowsFormsApplication1.Funcs.JiTingUCtrl");
-            object obj = Activator.CreateInstance(type);
-            Funcs.JiTingUCtrl func = (Funcs.JiTingUCtrl)obj;
-            func.DataChange += new Funcs.JiTingUCtrl.DataChangeHandler(Back2MainView);
+            Funcs.JiTingUCtrl cm = new Funcs.JiTingUCtrl(jlserialPort);
+            cm.DataChange += new Funcs.JiTingUCtrl.DataChangeHandler(Back2MainView);
             panel2.Controls.Clear();
-            panel2.Controls.Add(func);
+            panel2.Controls.Add(cm);
         }
         
         private void 开门保护试验ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Type type = Type.GetType("WindowsFormsApplication1.Funcs.KaiMenUCtrl");
-            object obj = Activator.CreateInstance(type);
-            Funcs.KaiMenUCtrl func = (Funcs.KaiMenUCtrl)obj;
-            func.DataChange += new Funcs.KaiMenUCtrl.DataChangeHandler(Back2MainView);
+            Funcs.KaiMenUCtrl cm = new Funcs.KaiMenUCtrl(jlserialPort);
+            cm.DataChange += new Funcs.KaiMenUCtrl.DataChangeHandler(Back2MainView);
             panel2.Controls.Clear();
-            panel2.Controls.Add(func);
+            panel2.Controls.Add(cm);
         }
         private void 计量数据一致性试验ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1174,6 +1163,21 @@ namespace WindowsFormsApplication1
                 Thread.Sleep(5);
                 byte[] array = toolFunc.HexStringToByteArray(Com.acboard.pcD1C2Send.Trim());
                 acserialPort.Write(array, 0, array.Length);
+            }
+            //********************************控制接地电阻接通、断开*********************************
+            //F1 2C 
+            if (cmd.SequenceEqual(Com.acboard.acF12C))
+            {
+                int sw = toolFunc.slice1Byte(data, 6, 1);
+                switch (sw)
+                {
+                    case 0:
+                        acboard.CmdOk = false;
+                        break;
+                    case 1:
+                        acboard.CmdOk = true;
+                        break;
+                }
             }
         }
         #endregion

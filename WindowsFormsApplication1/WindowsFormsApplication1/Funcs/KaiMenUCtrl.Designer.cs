@@ -38,7 +38,12 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.usrRtbx = new System.Windows.Forms.RichTextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.resultlabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -92,7 +97,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(70, 381);
+            this.label21.Location = new System.Drawing.Point(70, 367);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 12);
             this.label21.TabIndex = 137;
@@ -137,19 +142,71 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // usrRtbx
+            // textBox2
             // 
-            this.usrRtbx.Location = new System.Drawing.Point(72, 283);
-            this.usrRtbx.Name = "usrRtbx";
-            this.usrRtbx.Size = new System.Drawing.Size(358, 79);
-            this.usrRtbx.TabIndex = 153;
-            this.usrRtbx.Text = "";
+            this.textBox2.Location = new System.Drawing.Point(185, 326);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(73, 21);
+            this.textBox2.TabIndex = 156;
+            this.textBox2.Text = "0";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(185, 290);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(73, 21);
+            this.textBox1.TabIndex = 155;
+            this.textBox1.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(79, 329);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 12);
+            this.label5.TabIndex = 154;
+            this.label5.Text = "输出电流（A）:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(79, 293);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 12);
+            this.label4.TabIndex = 153;
+            this.label4.Text = "输出电压（V）:";
+            // 
+            // resultlabel
+            // 
+            this.resultlabel.AutoSize = true;
+            this.resultlabel.Location = new System.Drawing.Point(87, 399);
+            this.resultlabel.Name = "resultlabel";
+            this.resultlabel.Size = new System.Drawing.Size(71, 12);
+            this.resultlabel.TabIndex = 157;
+            this.resultlabel.Text = "状态:未测试";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 15F);
+            this.label2.Location = new System.Drawing.Point(228, 392);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 20);
+            this.label2.TabIndex = 158;
+            this.label2.Text = "waiting...";
             // 
             // KaiMenUCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.usrRtbx);
+            this.Controls.Add(this.resultlabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox2);
@@ -179,6 +236,11 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox usrRtbx;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label resultlabel;
+        private System.Windows.Forms.Label label2;
     }
 }
