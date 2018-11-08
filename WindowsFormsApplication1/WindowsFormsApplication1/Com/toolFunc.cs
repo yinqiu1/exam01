@@ -137,6 +137,23 @@ namespace WindowsFormsApplication1.Com
             //Console.WriteLine(fTemp1.ToString());
             return fTemp1;
         }
+        public static UInt64 byte8toUINT64(byte[] array)
+        {            
+            UInt64 ul = BitConverter.ToUInt64(array, 0);
+            return ul;
+        }
+
+        //将byte[]转换为 ASCII String
+        public static string bytes2asciiS(byte[] array,int s,int t)
+        {
+            byte[] newA = sliceBytes2Array(array,s,t);
+            string r = "";
+            for (int i = 0; i < newA.Length;i++ )
+            {
+                r += ((char)newA[i]).ToString();
+            }
+            return r;
+        }
         /// <summary>
         /// BCC和校验代码
         /// </summary>
